@@ -13,7 +13,7 @@ public class ArticleCollectionDaoImp implements ArticleCollectionDao {
 	}
 
 	public int finCountByArticleId(int ArticleId) {
-		//这个是实现类a 
+		//TODO
 		return 0;
 	}
 
