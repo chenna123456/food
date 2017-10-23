@@ -13,7 +13,7 @@ public class ArticleCollectionDaoImp implements ArticleCollectionDao {
 	}
 
 	public int finCountByArticleId(int ArticleId) {
-		// TODO Auto-generated method stub
+		//这个是实现类
 		return 0;
 	}
 
