@@ -1,18 +1,12 @@
 .all{
 	width: 900px;
-	/*border: 1px solid green;*/
+	border: 1px solid green;
 	margin: 0 auto;
 	padding: 0px;
 }
-.header{
-	width: 900px;
-	height: 106px;
-	
-}
+
 .middle{
 	width: 900px;
-	
-	
 	position: relative;
 }
 .left{
@@ -28,11 +22,7 @@
 	right: 0px;
 	
 }
-.footer{
-	width: 898px;
-	height: 171px;
-	
-}
+
 .header1{
 	width: 100%;
 	height: 70px;
@@ -175,7 +165,7 @@
    
     
 }
-ul{
+.u ul{
 	margin: 0;
 	padding: 0;
 	clear: both;
@@ -188,7 +178,7 @@ ul{
     list-style: none;
 }
 
-li{
+.u ul li{
 	margin: 0px;
 	padding: 0px;
 	margin: 0px 10px 5px 10px;
@@ -281,10 +271,10 @@ li{
 }
 .pro{
 	display: none;
-	margin-left: -15px;
+	margin-left: 70px;
 	padding: 0px;
 	position: absolute;
-	top:0px;
+	top:-20px;
 	left: 80px;
 	right: 15px;
     width: 200px;
@@ -347,4 +337,49 @@ li{
     height: 10px;
     line-height: 10px;
     background:url(../img/buttom_right.jpg) -890px -220px no-repeat;
+}
+
+.foodLi{
+	list-style:none;
+	margin: 0px;
+	padding: 0px;
+	margin: 10px 20px;
+    text-align: center;
+    float: left;
+    height: 153px;
+    width: 272px;
+    position: relative;
+    border: 0px solid brown;
+    position: relative;
+}
+.tenImg{
+	width:150px;
+	height: 145px;
+}
+.tenDescribe{
+	position: absolute;
+	height: 145px;
+	width: 115px;
+	margin-left: 158px;
+	margin-top: -145px;
+}
+p{
+	text-align: left;
+	font-size: 13px;
+}
+.shopImg{
+	margin:2px auto;
+}
+
+.LR_icon{
+	width:30px;
+	height:30px;
+}
+.LR_p{
+	width:100%;
+	text-align: center;
+}
+
+.tenImg:hover .pro{
+	display: block;
 }

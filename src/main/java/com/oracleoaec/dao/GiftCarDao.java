@@ -34,8 +34,9 @@ public interface GiftCarDao {
 	/**
 	 * 将传入的GiftCar对象添加到GiftCar表中
 	 * @param giftCar
+	 * @return 
 	 */
-	void addGiftCar(GiftCar giftCar);
+	int addGiftCar(GiftCar giftCar);
 	/**
 	 * 根据传入的GiftCar对象的id,删除表GiftCar中对应的对象
 	 * @param giftCar
@@ -46,5 +47,5 @@ public interface GiftCarDao {
 	 * @param giftCar
 	 */
 	void updateGiftCar(GiftCar giftCar);
-
+	
 }

@@ -3,6 +3,7 @@ package com.oracleoaec.dao;
 import java.util.List;
 
 import com.oracleoaec.entity.Exchangegift;
+import com.oracleoaec.entity.GiftCar;
 
 public interface ExchangegiftDao {
 	/**
@@ -10,6 +11,12 @@ public interface ExchangegiftDao {
 	 * @return
 	 */
 	int findCount();
+	/**
+	 * 通过传入的类型，查询总条数
+	 * @param type
+	 * @return
+	 */
+	int findCountByType(String type);
 	/**
 	 * 根据指定的页码和每页的长度，查询表Exchangegift
 	 * 并将查询到的数据封装为Exchangegift对象添加到list集合中
@@ -23,7 +30,13 @@ public interface ExchangegiftDao {
 	 * @param id
 	 * @return
 	 */
-	Exchangegift findExchangegift(int id);
+	Exchangegift findExchangegift(int id,int page,int pageSize);
+	/**
+	 * 通过制定的src，查询数据表Exchangegift中对应的Exchangegift对象，并返回
+	 * @param id
+	 * @return
+	 */
+	Exchangegift findExchangegiftBySrc(String src);
 	/**
 	 * 通过传入的类型type,page,pageSize,minPoint,maxPoint,
 	 * 检索数据表Exchangegift中满足条件的数据，
@@ -50,4 +63,18 @@ public interface ExchangegiftDao {
 	 * @param exchangegift
 	 */
 	void addExchangegift(Exchangegift exchangegift);
+	/**
+	 * 根据各个礼品的兑换次数，查询排行在前number个的Gigt
+	 * 的id及名称，并封装为Exchangegift对象返回
+	 * @param number
+	 * @return
+	 */
+	List<Exchangegift> findGiftTop(int number);
+	
+	/**
+	 * 更新Exchangegift对象
+	 * @param src
+	 */
+	int  updateCountByid(Exchangegift  ex);
+
 }

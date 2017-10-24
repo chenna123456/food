@@ -7,6 +7,9 @@ import java.util.Date;
  */
 public class Article {
 	private Integer id;
+	/**
+	 * 文章标题
+	 */
 	private String title;
 	private String type;
 	private String writer;

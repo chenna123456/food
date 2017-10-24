@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
-  <display-name>dingcan</display-name>
+  <display-name>yangzuochao</display-name>
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
     <welcome-file>index.htm</welcome-file>
@@ -9,4 +9,53 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+  <servlet-name>optionalfood</servlet-name>
+  <servlet-class>com.oracleoaec.sevlet.OptionalfoodServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>optionalfood</servlet-name>
+  <url-pattern>/optionalfood.do</url-pattern></servlet-mapping>
+   <servlet>
+  <servlet-name>zengpin</servlet-name>
+  <servlet-class>com.oracleoaec.sevlet.SelectzengpinServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>zengpin</servlet-name>
+  <url-pattern>/zengpin.do</url-pattern></servlet-mapping>
+   <servlet>
+  <servlet-name>zengpintype</servlet-name>
+  <servlet-class>com.oracleoaec.sevlet.SelectGiftTypeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>zengpintype</servlet-name>
+  <url-pattern>/zengpintype.do</url-pattern></servlet-mapping>
+     <servlet>
+  <servlet-name>giftBySrc</servlet-name>
+  <servlet-class>com.oracleoaec.sevlet.SelectGiftBySrcServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>giftBySrc</servlet-name>
+  <url-pattern>/giftBySrc.do</url-pattern></servlet-mapping>
+     <servlet>
+  <servlet-name>giftlist</servlet-name>
+  <servlet-class>com.oracleoaec.sevlet.SelectGiftlistServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>giftlist</servlet-name>
+  <url-pattern>/giftlist.do</url-pattern></servlet-mapping>
+    <servlet>
+  <servlet-name>gifttop</servlet-name>
+  <servlet-class>com.oracleoaec.sevlet.SelectGiftTopServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>gifttop</servlet-name>
+  <url-pattern>/gifttop.do</url-pattern></servlet-mapping>
+     <servlet>
+  <servlet-name>addgift</servlet-name>
+  <servlet-class>com.oracleoaec.sevlet.AddGiftServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>addgift</servlet-name>
+  <url-pattern>/addgift.do</url-pattern></servlet-mapping>
 </web-app>
