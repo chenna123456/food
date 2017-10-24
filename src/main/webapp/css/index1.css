@@ -1,0 +1,185 @@
+
+
+/*右部*/
+.right {
+	
+	width: 243px;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	right: 0px;	
+}
+
+.right #dingcantime {
+	border: 1px solid #feab43;
+	border-radius: 5px;
+	width: 243px;
+	height: 195px;
+	top: 0px;
+	left: 655px;
+	z-index: 1;
+}
+
+.right #dingcantime #dingcantime_zi {
+	/*border: 1px solid blue;*/
+	float: left;
+	width: 80px;
+	height: 30px;
+	margin-top: 0px;
+	line-height: 30px;
+	padding-left: 0px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #feab43;
+}
+
+.right #dingcantime #img_timer {
+	/*border: 1px solid red;*/
+	float: left;
+	margin-top: 2px;
+	margin-left: 5px;
+	width: 50px;
+	height: 30px;
+}
+
+.right #dingcantime #dingcantime2 {
+	/*border: 1px solid red;*/
+	width: 243px;
+	height: 136px;
+}
+
+.right #dingcantime #dingcantime2 #zhujie {
+	height: 20px;
+	font-size: 12px;
+	color: #e52614;
+}
+
+.right #dingcantime #dingcantime2 #dianhuadingcan {
+	height: 24px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #f16906;
+}
+.right #dingcantime #dingcantime2 #msn {
+	text-align: center;
+	padding-top: 5px;
+}
+/*订餐车*/
+#dingcanche{
+	margin-top: 10px;
+	border: 1px solid #feab43;
+	border-radius: 5px;
+	width: 243px;
+	height: 110px;
+    padding: 0;
+    background: url(../img/dingcanche.jpg) ;
+}
+#dingcanche2{
+	height: 100%;
+}
+#dingcanche_top{
+	width: 100%;
+    height: 39px;
+}
+
+#dingcanche_top_left {
+    float: left;
+    height: 39px;
+    line-height: 39px;
+    padding-left: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #feab43;
+}
+#dingcanche_top_right {
+	margin-bottom:0;
+    float: right;
+    width: 120px;
+    height: 30px;
+    }
+#cartsubmit{
+	float:left;
+	padding-left:90px;
+	cursor:pointer;
+}  
+#reset_btn{
+	float:left;
+	padding-left:10px;
+	cursor:pointer;
+}
+#website_notice{
+	margin-top: 10px;
+	border: 1px solid #feab43;
+	border-radius: 5px;
+	width: 100%;
+	height: 215px;
+}
+#website_top{
+	height: 42px;
+}
+#website_top_left{
+	height: 43px;
+	margin-top: 0px;
+	float: left;
+    font: bold 16px/43px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+    text-align: left;
+    padding-left: 12px;
+    color: #feab43;
+}
+#website_top_right{
+	float: right;
+    width: 60px;
+    height: 43px;
+    text-align: right;
+    margin-top: 6px
+}
+#article_list{
+	margin-top: 28px;
+	margin-left:0;
+	padding:0px;
+	width: 100%;
+	height: 150px;
+}
+
+ul .newslist_time2 {
+	margin:0px;
+    padding: 0px;
+}
+li.newslist_time2 {
+    padding-left:10px;
+    list-style: none;
+  	background: url(../img/43.gif) left no-repeat;
+}
+li.newslist_time2 .time {
+    float: right;
+    font: 12px/22px Verdana, Arial, Helvetica, sans-serif;
+    color: #999;
+}
+a.newslist_time2:link, a.newslist_time2:visited, a.newslist_time2:active {
+    color: #505050;
+    text-decoration: none;
+    font: 12px/22px Verdana, Arial, Helvetica, sans-serif;
+}
+.dingcanweekmenu2 {
+	margin-top: 10px;
+	border: 1px solid #feab43;
+	border-radius: 5px;
+    height: 110px;
+    width: 100%;
+}
+.riqi{
+	text-decoration: none;
+	cursor: pointer;
+	font: 16px;
+}
+a:link, a:visited, a:active {
+    color: #505050;
+    text-decoration: none;
+}
+.footer {
+	width: 898px;
+	height: 171px;
+	/*border: 1px solid green;*/
+}
+
+

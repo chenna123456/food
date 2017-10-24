@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link type="text/css" rel="stylesheet" href="css/jfdh.css">
+		<link type="text/css" rel="stylesheet" href="css/1111.css"/>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jfdh.js"></script>
+		
+	</head>
+	<body>
+		<div class="contain">
+			<div class="topps">
+		  	<div class="log">
+		  		<img  src="img/1257477260.gif"/>
+		  	</div>
+		  	<div class="nav">
+		  			<a href="#">关于我们&nbsp;&nbsp;</a><font color="black">|</font>
+					<a href="#">订餐指南&nbsp;&nbsp;</a><font color="black">|</font>
+					<a href="#">会员注册&nbsp;&nbsp;</a><font color="black">|</font>
+					<a href="#">会员登录&nbsp;&nbsp;</a><font color="black">|</font>
+					<a href="#">会员中心&nbsp;&nbsp;</a><font color="black">|</font>
+					<a href="#">我的订单&nbsp;&nbsp;</a><font color="black">|</font>
+					<a href="#">我的积分&nbsp;&nbsp;</a><font color="black">|</font>
+					
+		  	</div>
+		  	<div class="nav2">
+		  		<ul class=nav2_ul>
+		  			<li><a href="#">首页</a></li>
+		  			<li><a href="#">订单查询</a></li>
+		  			<li><a href="#">在线充值</a></li>
+		  			<li><a href="#">积分换赠</a></li>
+		  			<li><a href="#">每周菜谱</a></li>
+		  			<li><a href="#">饮食文化</a></li>
+		  			<li><a href="#">顾客留言</a></li>
+		  		</ul>
+		  		
+		  	</div>
+		  	
+		</div>  <!-- 以上为头部-->
+			<div class="content">
+				<!--赠品搜索-->
+				<div class="pdv">
+					<div class="pdv_content">
+						<div class="pdv_border">
+							<div class="pdv_1"></div>
+							<div class="pdv_2">
+								<div class="pdv_3">
+										<div class="serchform">
+											赠品搜索<select id="zengpinfenlei">
+												<option value="">请选择分类</option>
+											</select>
+										</div>
+										<div class="serchform">
+										&nbsp;&nbsp;&nbsp;
+											<select class="myshownums">
+												<option value="4">每页4条</option>
+												<option value="6">每页6条</option>
+												<option value="8">每页8条</option>
+												<option value="10">每页10条</option>
+												<option value="20">每页20条</option>
+											</select>
+										</div>
+										&nbsp;&nbsp;&nbsp;
+										<div class="serchform">&nbsp;&nbsp;&nbsp;请输入积分值范围:&nbsp;&nbsp;&nbsp;
+											<input id="cent_in_min" type="number" value=""/>
+											&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;
+										</div>
+										<div class="serchform">
+											<input id="cent_in_max" type="number" value=""/>
+										</div>
+										<div class="serchform">
+										&nbsp;&nbsp;&nbsp;
+											<input id="imgField" type="image" src="img/imgf.gif" />
+										</div>
+										
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--赠品检索-->
+				<div class="pdv_35" title="积分换赠">
+					<div class="spdv_35">
+						<div class="zpdv_border">
+							<div class="zpdv_1">
+								<div class="zpdv_2">
+									<div class="jf">积分换赠</div>
+									<div class="zpdv_3"></div>
+									
+								</div>
+								<div class="pdv_body">
+									<ul class="body_u">
+										
+									</ul>
+									<div class="showpages">
+										<div class="page_left">
+											<!--此处要加页面总数等-->
+											共<span id="number"></span>条
+											&nbsp;&nbsp;&nbsp;
+											共<span id="pages"></span>页
+										</div>
+										<div class="page_right">
+											<ul class="pages">
+												<li class="first_page">首页</li>
+												<li class="up_page">上一页</li>
+												<li class="page_list"> </li>
+												<li class="next_page">下一页</li>
+												<li class="select_page">
+													<select class="select_pages">
+														
+													</select>
+												</li>
+												<li class="last_page">尾页</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="pdv_bottom"></div>
+						<div class="pdv_bottom_right"></div>
+					</div>
+				</div>
+				<!--编辑区-->
+		<div class="rightall" ">
+			<div class="hright_top" title="兑换规则">
+				<div class="top_content">
+					<div class="tc">
+						<div class="tcc">
+							<div class="tcc_top">
+								<div class="tcc_text">兑换规则</div>
+								<div class="tcc_right"></div>
+							</div>
+							<div class="tcc_bottom">
+								<div class="bottom_text">
+									您提交兑换申请后，
+									工作人员将会对您的申请及时进行审核，
+									并且于每月的1号至7号统一发放赠品。
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tc1"></div>
+					<div class="tc2"></div>
+				</div>
+			</div>
+			<!--文章列表-->
+			<div class="hright_content" title="积分规则">
+				<div class="content1">
+					<div class="co1">
+						<div class="coo1">
+							<div class=" co_top">
+								<div class="co_text">积分规则</div>
+								<div class="co_right"></div>
+							</div>
+							<div class="co_bottom">
+								<ul class="newlist_diy">
+									<!--数据库读取数据-->
+									<li class="newlisti_diy">
+										<img src="img/newlist.gif" />
+										<a href="" target="_self" class="newlista_diy">新注册会员即送200积分</a>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="co2"></div>
+					<div class="co3"></div>
+				</div>
+			</div>
+			<!--赠品兑换排行-->
+			<div class="hright_bottom" title="赠品兑换">
+				<div class="bottom_content">
+					<div class="bottom_1">
+						<div class="bottom_1_1">
+							<div class="bottom_top">
+								<div class="top_left">赠品兑换排行</div>
+								<div class="top_right"></div>
+							</div>
+							<div class="bottom_center">
+								<ul class="hz_paihang">
+							<!--数据库读取数据-->
+									
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="bottom_b"></div>
+					<div class=" bottom_right">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+			 <!-- 以下为脚部-->
+        <div class="foots">
+			<div class="bottommenu" >
+				<div class="bottommenu1">
+					<a href="#">关于我们&nbsp;&nbsp;</a><font color="black">|</font>
+					<a href="#">订餐指南&nbsp;&nbsp;</a><font color="black">|</font>
+					<a href="#">配送说明&nbsp;&nbsp;</a><font color="black">|</font>
+					<a href="#">联系方式&nbsp;&nbsp;</a><font color="black">|</font>
+					<a href="#">联系方式&nbsp;&nbsp;</a><font color="black">|</font>
+					<a href="#">联系方式&nbsp;&nbsp;</a><font color="black">|</font>
+					<a href="#">投诉建议&nbsp;&nbsp;</a><font color="black">|</font>
+					<a href="#">诚聘英才&nbsp;&nbsp;</a><font color="black">|</font>
+				</div>
+				
+			</div>
+			<div class="pdv_">
+				<ul>
+					<li><a href="#">39健康网</a></li>
+					<li><a href="#">天天营养网</a></li>
+					<li><a href="#">中国餐饮网</a></li>
+					<li><a href="#">餐饮世界网</a></li>
+					<li><a href="#">特色菜网</a></li>
+					<li><a href="#">中国西餐网</a></li>
+					<li><a href="#">中华素食网</a></li>
+					<li><a href="#">中国快餐网</a></li>
+					<li><a href="#">搜厨网</a></li>
+					<li><a href="#">餐厅设计</a></li>
+					<li><a href="#">美食中国</a></li>
+				</ul>
+				</div>
+				<div class="bottommenu2">
+				电话：00000000000 售前QQ：0000000	0000 地址XXXXXXXXXXXXXX 邮码 00000(商务合作)
+				</div>
+			<div class="bottommenu2">
+				网上快餐店 Copyright(C)2009-2010
+				</div>
+				<div class="img1">
+					<img src="img/1253157163.jpg" />
+				</div>
+
+			
+			
+		</div>
+		</div>
+	</body>
+</html>
