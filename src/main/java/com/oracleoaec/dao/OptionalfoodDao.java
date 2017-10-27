@@ -35,4 +35,7 @@ public interface OptionalfoodDao {
      * @param optionalfood
      */
     void addOptionalfood(Optionalfood  optionalfood);
+
+	public Integer findListSize(String type, int parseInt, int parseInt2);
+
 }

@@ -33,8 +33,9 @@ public interface ComplaintDao {
 	/**
 	 * 把传入的Complaint对象添加到Complaint表中
 	 * @param complaint
+	 * @return 
 	 */
-	void addComplaintDao(Complaint complaint);
+	int addComplaintDao(Complaint complaint);
 	/**
 	 * 根据传入的Complaint对象的id删除数据库Complaint对应的内容
 	 * @param complaint

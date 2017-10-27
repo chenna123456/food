@@ -3,7 +3,6 @@ $(function(){
 	findgift();
 	$(".addtocart").click(function(){
 		var num=$("#buynums").val();
-		alert(num);
 		$.ajax({
 			type:"post",
 			url:"addgift.do",
@@ -11,7 +10,7 @@ $(function(){
 			dataType:"json",
 			success:function(){
 				alert("添加成功");
-				window.location.href="jfdh.html";
+				window.location.href="giftlist.html";
 			}
 		});
 	});

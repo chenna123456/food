@@ -1,0 +1,175 @@
+/* ============搜索表单============== */
+
+div.productsearchform {
+	background: url(../images/search_hz.gif) 15px no-repeat;
+	padding-left: 40px;
+	height: 39px;
+	line-height: 39px;
+}
+
+div.productsearchform div.searchform {
+	float: left;
+	padding: 6px 3px 0px 0px;
+}
+
+div.productsearchform div.searchform .input {
+	border: 1px #ddd solid;
+	height: 18px;
+	line-height: 18px;
+	padding: 0px 3px;
+	background: #fbfbfb;
+}
+
+
+/* ============文章列表============== */
+
+ul.newslist_time {
+	margin: 0px;
+	padding: 0px;
+}
+
+li.newslist_time {
+	margin: 0;
+	padding-left: 16px;
+	list-style-type: none;
+	background:  url(../fcimg/lile.gif) left no-repeat;
+	
+}
+
+li.newslist_time .time {
+	float: right;
+	font: 12px/22px Verdana, Arial, Helvetica, sans-serif;
+	color: #999;
+}
+
+a.newslist_time:link,a.newslist_time:visited,a.newslist_time:active {
+	color: #505050;
+	text-decoration: none;
+	font: 12px/22px Verdana, Arial, Helvetica, sans-serif;
+}
+
+a.newslist_time:hover {
+	color: #ff0000;
+	text-decoration: underline;
+	font: 12px/22px Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+/* ============文章列表============== */
+
+ul.newslist {
+	margin: 0px;
+	padding: 0px;
+}
+
+li.newslist {
+	margin: 0;
+	padding-left: 16px;
+	list-style-type: none;
+	font-weight: 100;
+	color: #505050;
+	background:  url(../fcimg/lile.gif) left no-repeat;
+}
+
+a.newslist:link,
+a.newslist:visited,
+a.newslist:active {
+	color: #505050;
+	text-decoration: none;
+	font: 12px/22px simsun;
+}
+
+a.newslist:hover {
+	color: #ff0000;
+	text-decoration: underline;
+	font: 12px/22px simsun;
+}
+
+div#dingcanweekmenu {
+	border: 0px;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: url(../fcimg/dingcanweekmenu_leftline.jpg) repeat-y;
+}
+
+div#dingcanweekmenu2 {
+	height: 100%;
+	background: url(../fcimg/dingcanweekmenu_rightline.jpg) right repeat-y;
+}
+
+div#dingcanweekmenu_top {
+	width: 100%;
+	height: 43px;
+	background: url(../fcimg/dingcanweekmenu.jpg) 0px 0px no-repeat;
+}
+
+div#dingcanweekmenu_top_left {
+	float: left;
+	height: 43px;
+	line-height: 43px;
+	padding-left: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #feab43;
+}
+
+div#dingcanweekmenu_top_right {
+	float: right;
+	width: 10px;
+	height: 43px;
+	background: url(../fcimg/dingcanweekmenu.jpg) -890px 0px no-repeat;
+}
+
+div#dingcanweekmenu_bottom_left {
+	margin-top: -10px;
+	height: 10px;
+	line-height: 10px;
+	background: url(../images/dingcanweekmenu.jpg) 0px -220px no-repeat;
+}
+
+div#dingcanweekmenu_bottom_right {
+	float: right;
+	margin-top: -10px;
+	width: 10px;
+	height: 10px;
+	line-height: 10px;
+	background: url(../images/dingcanweekmenu.jpg) -890px -220px no-repeat;
+}
+
+div.dingcanweekmenuinfo {
+	margin: 6px 6px 10px 6px;
+	background: #fffbef;
+}
+
+.riqi {
+	cursor: pointer;
+}
+
+a.nowriqiclass:link,
+a.nowriqiclass:visited,
+a.nowriqiclass:active {
+	color: #f89c47;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+.puriqiclass {}
+
+#advsheadlb {
+	margin: 0;
+	padding: 0;
+}
+
+#advsheadlb .advsheadlbpic {
+	width: 100%;
+	border: 0px;
+	display: none;
+}
+/* ============图片轮播============== */
+.advsheadlbpic #advsheadlbpic_0{
+	display: inline;
+}
+.advsheadlbpic{
+	display:none;
+}

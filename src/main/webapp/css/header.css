@@ -1,0 +1,85 @@
+/*=========栏目菜单===========*/
+
+div#menu {
+	width: 100%;
+	height: 41px;
+	margin: 0px;
+	padding: 0px;
+}
+
+div#mainmenu {
+	margin: 0;
+	padding-left: 219px;
+	background: url(../headerimg/menu_bg.jpg) 0px 0px repeat-x;
+}
+
+div#mainmenu ul {
+	height: 41px;
+	line-height: 41px;
+	overflow: hidden;
+	margin: 0px;
+}
+
+div#mainmenu li {
+	float: left;
+	display: inline;
+	margin: 0px;
+	padding: 0px;
+	background: url(../headerimg/menu.jpg) 0px 0px no-repeat;
+}
+
+div#mainmenu a {
+	display: block;
+	width: 93px;
+	text-align: center;
+	font: bold 14px/41px 'Microsoft YaHei', 'SimSun', Arial, Sans-Serif;
+}
+
+div#mainmenu a:link,
+div#mainmenu a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+div#mainmenu a:hover,
+div#mainmenu a:active {
+	color: #ffffff;
+	background: url(../headerimg/menu_hover.jpg) 0px 0px no-repeat;
+	text-decoration: none;
+}
+
+div#mainmenu a.current {
+	color: #ffffff;
+	background: url(../headerimg/menu_hover.jpg)) 0px 0px no-repeat;
+	text-decoration: none;
+}
+
+
+/*=========顶部菜单===========*/
+
+div#topmenu {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	height: 25px;
+	line-height: 25px;
+	color: #555;
+	text-align: center;
+	background: url(../headerimg/topmenu_bg.jpg) no-repeat;
+}
+
+div#topmenu a:link,
+div#topmenu a:visited,
+div#topmenu a:active {
+	margin: 0 5px;
+	color: #555;
+	font: 12px/25px 'Microsoft YaHei', 'SimSun', Arial, Sans-Serif;
+	text-decoration: none;
+}
+
+div#topmenu a:hover {
+	margin: 0 5px;
+	color: #ff7300;
+	font: 12px/25px 'Microsoft YaHei', 'SimSun', Arial, Sans-Serif;
+	text-decoration: none;
+}

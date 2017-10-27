@@ -201,13 +201,11 @@ function zengpingye() {
 			$(".body_u").append(s);
 			$(".prodtitle").click(function() {
 				var giftsrc = this.src;
-				alert(giftsrc);
 				document.cookie = "giftsrc=" + escape(giftsrc);
 				window.open("giftdh.html");
 			});
 			$(".prodtitle2").click(function() {
 				var giftsrc = this.value;
-				alert(giftsrc);
 				document.cookie="giftsrc="+escape(giftsrc);
 				window.open("giftdh.html");
 			});

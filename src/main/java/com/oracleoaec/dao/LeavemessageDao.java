@@ -20,8 +20,9 @@ public interface LeavemessageDao {
 	/**
 	 * 将传入的Leavemessage对象添加到Leavemessage表中
 	 * @param leavemessage
+	 * @return 
 	 */
-	void addLeavemessage(Leavemessage leavemessage);
+	int addLeavemessage(Leavemessage leavemessage);
 	/**
 	 * 根据传入的Leavemessage对象的id,
 	 * 删除表Leavemessage对应的数据

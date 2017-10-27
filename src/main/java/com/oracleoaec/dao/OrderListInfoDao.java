@@ -1,5 +1,7 @@
 package com.oracleoaec.dao;
 
+import java.util.List;
+
 import com.oracleoaec.entity.Orderlistinfo;
 /**
  * 订单信息接口
@@ -21,7 +23,7 @@ public interface OrderListInfoDao {
 	 * @param vipId
 	 * @return
 	 */
-	Orderlistinfo findOrderInfoByVipId(int vipId);
+	List<Orderlistinfo> findOrderInfoByVipId(int vipId);
 	/**
 	 * 根据传入的Orderlistinfo对象的id更新订单内容
 	 * @param orderlistinfo

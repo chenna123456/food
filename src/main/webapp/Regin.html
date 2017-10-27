@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="css/topp.css" type="text/css" />
+<script type="text/javascript" src="../Login/js/jquery.js"></script>
+<script type="text/javascript" src="../Login/js/yanzhengma.js"></script>
+<script type="text/javascript" src="../Login/js/ReginJudge.js"></script>
+</head>
+
+<body>
+	<!--所有内容都写在"topps" div中  nav 代表左上角的小导航条样式 nav2代右下角首页大导航条样式 nav2_ul 代表右下角大导航条中ul样式  其余部分未写class-->
+	<div id="contain"
+		style="width: 900px; background: rgb(255, 255, 255); margin: 0px auto; padding: 0px">
+
+		<div class="topps">
+			<div class="log">
+				<img src="img/1257477260.gif" />
+			</div>
+			<div class="nav">
+				<a href="#">关于我们</a> <font color="black">|</font> <a href="#">订餐指南</a>
+				<font color="black">|</font> <a href="#">会员注册</a> <font
+					color="black">|</font> <a href="#">会员登录</a> <font color="black">|</font>
+				<a href="#">会员中心</a> <font color="black">|</font> <a href="#">我的订单</a>
+				<font color="black">|</font>
+			</div>
+			<div class="nav2">
+				<ul class=nav2_ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="Select.html">订单查询</a></li>
+					<li><a href="#">在线充值</a></li>
+					<li><a href="jfdh.html">积分换赠</a></li>
+					<li><a href="wf.html">每周菜谱</a></li>
+					<li><a href="foodculture.html">饮食文化</a></li>
+					<li><a href="guestbook.html">顾客留言</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+		<div style="width: 1000px; height: 500px;">
+			<br /> <br /> <br /> <br /> <br /> <br />
+
+			<div
+				style="width: 600px; text-align: left; border: 1px #f59d5e solid; background-color: #fdebd5; padding: 30px; margin: 0px; margin-left: 90px;">
+				<div
+					style="width: 410px; float: left; text-align: left; border: 1px #f59d5e solid; padding: 20px; background-color: #ffffff;">
+					<form id="memberLogin" method="post" action="regin.do">
+						<div id="notice" class="noticediv">
+							<table
+								style="border-collapse: separate; border-spacing: 10px 20px;">
+
+								<tbody>
+									<tr>
+										<td width="80">用户名:</td>
+										<td><input type="text" id="muser" name="muser"
+											class="input" maxlength="20" style="width: 135px"><span id="error3" style="color: red"></span></td>
+
+									</tr>
+									</br>
+									<tr>
+										<td width="80">手机号码:</td>
+										<td><input type="text" id="mphone" name="mphone"
+											class="input" maxlength="20" style="width: 135px"><span id="error2" style="color: red"></span></td>
+									</tr>
+									<tr>
+										<td width="80">用户密码:</td>
+										<td><input type="password" id="mpwd1" name="mpwd1"
+											class="input" maxlength="20" style="width: 135px"></td>
+									</tr>
+									<tr>
+										<td width="80">确认密码:</td>
+										<td><input type="password" id="mpwd2" name="mpwd2"
+											class="input" maxlength="20" style="width: 135px"><span id="error" style="color: red">密码长度不小于5位</span></td>
+									</tr>
+									<tr>
+										<td width="80">默认地址:</td>
+										<td><select maxlength="20"
+											style="width: 70px; height: 22px;" name="driName">
+												<option value="西山区">西山区</option>
+												<option value="官渡区">官渡区</option>
+										</select> <input type="text" id="maddress" name="maddress" class="input"
+											maxlength="20" style="width: 135px"><span id="error4" style="color: red"></span></td>
+										</td>
+
+									</tr>
+
+									<tr>
+										<td width="80">验 证 码</td>
+										<td>
+											<table border="0" cellspacing="0" cellpadding="0">
+												<tbody>
+													<tr>
+														<td><input type="text" id="ImgCode" name="ImgCode"
+															style="width: 59px" class="input"></td>
+														<td><img id="codeimg" name="codeimg"
+															src="/project02/Login/code.do" width="70" height="20"
+															style="border: 1px #dddddd solid; cursor: pointer"
+															onclick="fresh()"></td>
+													</tr>
+												</tbody>
+											</table>
+
+										</td>
+									</tr>
+
+									<tr>
+										<td width="80"><input name="act" type="hidden" id="act"
+											value="memberlogin"></td>
+										<td>
+											<img src="img/zhuce.gif"  width="40" height="19" border="0" id="zhuce" style="cursor: pointer">
+											<!-- <input id="imageField" type="image" src="img/zhuce.gif"
+											border="0"> -->
+										</td>
+									</tr>
+
+								</tbody>
+
+							</table>
+
+						</div>
+					</form>
+				</div>
+
+			</div>
+			
+		</div>
+		
+		<br /> <br /> <br /> <br /> <br /> <br />
+
+
+
+		<div class="foots">
+			<div class="bottommenu">
+				<div class="bottommenu1">
+					<a href="#">关于我们&nbsp;</a> <font color="black">|</font> <a href="#">订餐指南&nbsp;</a>
+					<font color="black">|</font> <a href="#">配送说明&nbsp;</a> <font
+						color="black">|</font> <a href="#">联系方式&nbsp;</a> <font
+						color="black">|</font> <a href="#">联系方式&nbsp;</a> <font
+						color="black">|</font> <a href="#">投诉建议&nbsp;</a> <font
+						color="black">|</font> <a href="#">诚聘英才&nbsp;</a> <font
+						color="black">|</font>
+				</div>
+
+			</div>
+			<div class="pdv_">
+				<ul>
+					<li><a href="#">39健康网</a></li>
+					<li><a href="#">天天营养网</a></li>
+					<li><a href="#">中国餐饮网</a></li>
+					<li><a href="#">餐饮世界网</a></li>
+					<li><a href="#">特色菜网</a></li>
+					<li><a href="#">中国西餐网</a></li>
+					<li><a href="#">中华素食网</a></li>
+					<li><a href="#">中国快餐网</a></li>
+					<li><a href="#">搜厨网</a></li>
+					<li><a href="#">餐厅设计</a></li>
+					<li><a href="#">美食中国</a></li>
+				</ul>
+			</div>
+			<div class="bottommenu2">电话：00000000000 售前QQ：0000000 0000
+				地址XXXXXXXXXXXXXX 邮码 00000(商务合作)</div>
+			<div class="bottommenu2">网上快餐店 Copyright(C)2009-2010</div>
+			<div class="img1">
+				<img src="img/1253157163.jpg" />
+			</div>
+
+		</div>
+
+	</div>
+
+	</div>
+</body>
+
+</html>

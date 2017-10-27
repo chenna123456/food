@@ -29,8 +29,9 @@ public interface VipcommentDao {
 	/**
 	 * 将传入的Vipcomment对象添加到Vipcomment表中
 	 * @param vipcomment
+	 * @return 
 	 */
-	void addVipcomment(Vipcomment vipcomment);
+	int addVipcomment(Vipcomment vipcomment);
 	/**
 	 * 根据传入的Vipcomment对象中的id,
 	 * 删除数据表Vipcomment中的数据

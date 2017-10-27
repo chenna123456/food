@@ -15,8 +15,10 @@ public interface ComplaintService {
 	 * 添加投诉
 	 * 调用ComplaintDao中
 	 * @param complaint
+	 * @return 
 	 */
-	void addComplaint(Complaint complaint);
+	int addComplaint(String title,String content,String complaintName,
+			String gender,int vipId,String address );
 	/**
 	 * 根据传入的页码及页长，
 	 * 调用ComplaintDao中的findComplaint(int page,int pageSize)方法

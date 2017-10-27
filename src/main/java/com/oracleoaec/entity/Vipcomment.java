@@ -7,19 +7,34 @@ import java.util.Date;
  */
 public class Vipcomment {
 	private Integer id;
-	private Integer artcialId;
+	private Integer articleID; 
+	private String aTitle;
 	private String vipname;
-	private String content;
+	private String content;  
 	private Date leaveTime;
 	public Vipcomment() {
 	}
-	public Vipcomment(Integer id, Integer artcialId, String vipname, String content, Date leaveTime) {
+	public Vipcomment(String aTitle, Integer id, Integer articleID, String vipname, String content, Date leaveTime) {
 		super();
 		this.id = id;
-		this.artcialId = artcialId;
+		this.articleID = articleID;
 		this.vipname = vipname;
 		this.content = content;
 		this.leaveTime = leaveTime;
+		this.aTitle = aTitle;
+	}
+	
+	public Integer getArticleID() {
+		return articleID;
+	}
+	public void setArticleID(Integer articleID) {
+		this.articleID = articleID;
+	}
+	public String getaTitle() {
+		return aTitle;
+	}
+	public void setaTitle(String aTitle) {
+		this.aTitle = aTitle;
 	}
 	public Integer getId() {
 		return id;
@@ -27,12 +42,7 @@ public class Vipcomment {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public Integer getArtcialId() {
-		return artcialId;
-	}
-	public void setArtcialId(Integer artcialId) {
-		this.artcialId = artcialId;
-	}
+	
 	public String getVipname() {
 		return vipname;
 	}
@@ -53,7 +63,7 @@ public class Vipcomment {
 	}
 	@Override
 	public String toString() {
-		return "Vipcomment [id=" + id + ", artcialId=" + artcialId + ", vipname=" + vipname + ", content=" + content
-				+ ", leaveTime=" + leaveTime + "]";
+		return "Vipcomment [id=" + id + ", articleID=" + articleID + ", aTitle=" + aTitle + ", vipname=" + vipname
+				+ ", content=" + content + ", leaveTime=" + leaveTime + "]";
 	}
 }

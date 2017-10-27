@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>顾客留言-网上快餐店</title>
+<!-- author:刘飞
+  time:20171022 -->
+<link href="css/comm.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/guestbook.js"></script>
+<script type="text/javascript" src="js/guestbookform.js"></script>
+</head>
+<body style="background: transparent">
+
+	<div id="contain"
+		style="width: 900px; background: rgb(255, 255, 255); margin: 0px auto; padding: 0px">
+
+		<div id="top"
+			style="width: 900px; height: 106px; background: none transparent scroll repeat 0% 0%">
+
+
+			<!-- 二级导航菜单 -->
+
+			<div id="pdv_3411" class="pdv_class"
+				style="width: 900px; height: 41px; top: 65px; left: 0px; z-index: 1">
+				<div id="spdv_3411" class="pdv_top"
+					style="overflow: hidden; width: 100%; height: 100%">
+					<div class="pdv_border"
+						style="margin: 0px; padding: 0px; height: 41px; border: 0px solid;">
+						<div
+							style="height: 25px; margin: 1px; display: none; background:;">
+							<div
+								style="float: left; margin-left: 12px; line-height: 25px; font-weight: bold; color:">
+								导航菜单</div>
+							<div style="float: right; margin-right: 10px; display: none">
+								<a href="-1" style="line-height: 25px; color:">更多</a>
+							</div>
+						</div>
+						<div style="padding: 0px">
+
+							<link href="css/head/A.css" rel="stylesheet" type="text/css">
+
+							<div id="menu">
+								<div class="mainmenuleft"></div>
+								<div class="mainmenuright"></div>
+
+								<div id="mainmenu">
+									<ul>
+
+										<li><a href="index.html">首页</a></li>
+					<li><a href="Select.html">订单查询</a></li>
+					<li><a href="#">在线充值</a></li>
+					<li><a href="jfdh.html">积分换赠</a></li>
+					<li><a href="wf.html">每周菜谱</a></li>
+					<li><a href="foodculture.html">饮食文化</a></li>
+					<li><a href="#">顾客留言</a></li>
+
+									</ul>
+								</div>
+
+								<div id="smenu">
+									<div class="smenuleft"></div>
+									<div class="smenuright"></div>
+									<ul style="display: none;">
+									</ul>
+									<ul style="display: none;">
+									</ul>
+									<ul style="display: none;">
+									</ul>
+									<ul style="display: none;">
+									</ul>
+									<ul style="display: none;">
+									</ul>
+									<ul style="display: none;">
+									</ul>
+									<ul style="display: block;">
+									</ul>
+
+								</div>
+							</div>
+							<!-- <script>showMenu(6);</script> -->
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- 顶部菜单(一级) -->
+
+			<div id="pdv_3405" class="pdv_class"
+				style="width: 395px; height: 25px; top: 0px; left: 495px; z-index: 3">
+				<div id="spdv_3405" class="pdv_top"
+					style="overflow: hidden; width: 100%; height: 100%">
+					<div class="pdv_border"
+						style="margin: 0px; padding: 0px; height: 25px; border: 0px solid;">
+						<div
+							style="height: 25px; margin: 1px; display: none; background:;">
+							<div
+								style="float: left; margin-left: 12px; line-height: 25px; font-weight: bold; color:">
+
+							</div>
+							<div style="float: right; margin-right: 10px; display: none">
+								<a href="-1" style="line-height: 25px; color:">更多</a>
+							</div>
+						</div>
+						<div style="padding: 0px">
+
+							<link href="css/head/topmenu_bk.css" rel="stylesheet"
+								type="text/css">
+
+							<div id="topmenu">
+
+								<a href="../page/html/?1.html" target="_self">订餐指南</a>| <a
+									href="../member/reg.php" target="_self">会员注册</a>| <a
+									href="../member/index.php" target="_self">会员登录</a>| <a
+									href="../member/index.php" target="_self">会员中心</a>| <a
+									href="../dingcan/order.php" target="_self">我的订单</a>| <a
+									href="../member/member_cent.php" target="_self">我的积分</a>|
+
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- 网站标志 -->
+
+			<div id="pdv_3404" class="pdv_class" title=""
+				style="width: 210px; height: 100px; top: 0px; left: 0px; z-index: 4">
+				<div id="spdv_3404" class="pdv_top"
+					style="overflow: hidden; width: 100%; height: 100%">
+					<div class="pdv_border"
+						style="margin: 0px; padding: 0px; height: 100px; border: 0px solid;">
+						<div
+							style="height: 25px; margin: 1px; display: none; background:;">
+							<div
+								style="float: left; margin-left: 12px; line-height: 25px; font-weight: bold; color:">
+
+							</div>
+							<div style="float: right; margin-right: 10px; display: none">
+								<a href="-1" style="line-height: 25px; color:">更多</a>
+							</div>
+						</div>
+						<div style="padding: 0px">
+
+
+							<a href="#"><img src="img/head/1257477260.gif"></a>
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<div id="content"
+			style="width: 900px; height: 2150px; background: none 0% 0% repeat scroll transparent; margin: 10px auto;">
+
+
+			<!-- 留言翻页检索 -->
+
+			<div id="pdv_3462" class="pdv_class" title=""
+				style="width: 900px; height: 1650px; top: 0px; left: 0px; z-index: 8;">
+				<div id="spdv_3462" class="pdv_content"
+					style="overflow: visible; width: 100%;">
+					<div class="pdv_border"
+						style="margin: 0; padding: 0; height: 100%; border: 0px solid; background:;">
+						<div
+							style="height: 25px; margin: 1px; display: none; background:;">
+							<div
+								style="float: left; margin-left: 12px; line-height: 25px; font-weight: bold; color:">
+
+							</div>
+							<div style="float: right; margin-right: 10px; display: none">
+								<a href="-1" style="line-height: 25px; color:">更多</a>
+							</div>
+						</div>
+						<div style="padding: 0px">
+
+							<link href="css/guestbook/guestbookquery.css" rel="stylesheet"
+								type="text/css">
+
+							<div id="guestbookquery">
+
+								<div class="cap">
+									<div class="au">
+										<strong><font class="auz">作者信息</font></strong>
+									</div>
+									<div class="gb">
+										<strong><font class="gbz">留言信息</font></strong>
+									</div>
+								</div>
+
+
+								<!-- js中拼接了这部分 -->
+								<!-- <div class="guestbook">
+	
+		<div class="auinfo">
+			<div class="aupic">
+				<img src="img/guestbook/m03.gif" border="0">
+			</div>
+			<div class="auname">SAsa</div>
+			<div class="lynum">第10条留言</div>
+		</div>
+			
+		<div class="gbinfo">
+			<div class="ttinfo">
+				<div class="title">标题：aSAsa</div>
+				<div class="fjinfo"><img src="img/guestbook/homepage.gif" border="0"><a href="#">主页</a>&nbsp;&nbsp;<img src="img/guestbook/email.gif" border="0">信箱&nbsp;&nbsp;<img src="img/guestbook/qq.gif" border="0">&nbsp;QQ</div>
+			</div>
+			<div class="lyinfo">
+				<div class="mood"><img src="img/guestbook/s11.gif" border="0"></div><div class="bdinfo2">SAsa</div>
+			</div>
+			<div class="hfinfo">
+				<div class="hf" style="display:none;">版主回复：</div>
+				<div class="hfanswer" style="display:none;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+			</div>
+			<div class="btinfo">
+				<img src="img/guestbook/posttime.gif" border="0">&nbsp;&nbsp;2017-10-21 06:45:34&nbsp;&nbsp;&nbsp;&nbsp;<img src="img/guestbook/ip.gif" border="0">&nbsp;&nbsp;117.34.13.60
+			</div>
+		</div>
+	</div> -->
+
+							</div>
+							<div id="showpages">
+								<!-- <!-- 显示分页信息信息 -->
+								<!-- <div id="pagesinfo">共N条留言&nbsp;&nbsp;每页8条&nbsp;&nbsp;页次：1/1</div> -->
+								<div id="pages">
+									<ul>
+										<li class="pbutton" id="pbutton1">
+											<button>首页</button>
+											<!-- <a href="/2030/guestbook/index.php?page=1&amp;key=">首页</a> -->
+										</li>
+										<li class="pbutton"><input type="button" value="上一页"
+											class="xx" /></li>
+										<li class="pagesnow"></li>
+										<li class="pbutton"><input type="button" value="下一页"
+											class="xx" /></li>
+										<li class="opt" style='margin-top: 10px;'><select></select></li>
+										<li class="pbutton" id="pbutton2">
+											<button>尾页</button>
+											<!-- <a href="/2030/guestbook/index.php?page=1&amp;key=">尾页</a> -->
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- 留言发布表单 -->
+			<div id="pdv_3463" class="pdv_class" title="签写留言"
+				style="width: 900px; height: 414px; position: absolute; bottom: 10px; left: 0px; z-index: 9;">
+				<div id="spdv_3463" class="pdv_content"
+					style="overflow: hidden; width: 100%; height: 100%">
+					<div class="pdv_border"
+						style="margin: 0px; padding: 0px; height: 414px; border: 0px solid;">
+						<div
+							style="height: 25px; margin: 1px; display: none; background:;">
+							<div
+								style="float: left; margin-left: 12px; line-height: 25px; font-weight: bold; color:">
+								签写留言</div>
+							<div style="float: right; margin-right: 10px; display: none">
+								<a href="-1" style="line-height: 25px; color:">更多</a>
+							</div>
+						</div>
+						<div style="padding: 0px">
+
+							<script type="text/javascript" src="js/guestbook.js"></script>
+
+							<link href="css/guestbook/guestbookform.css" rel="stylesheet"
+								type="text/css">
+
+
+							<div id="notice"></div>
+							<form id="guestbookform" method="post" action="" name="myform">
+								<table width="100%" border="0" cellspacing="0" cellpadding="0"
+									style="border: 1px #d2d2d2 solid;">
+									<tbody>
+										<tr>
+											<td width="123" height="30" align="right"
+												style="border-right: 1px #d2d2d2 solid; border-bottom: 1px #d2d2d2 solid;">留言标题：</td>
+											<td colspan="2"
+												style="border-bottom: 1px #d2d2d2 solid; padding-left: 5px;">
+												<input type="text" name="title" class="input" id="input1"
+												maxlength="20" style="width: 300px;">&nbsp;<font
+												style="color: #ff0000;">*</font>&nbsp;&nbsp;不得超过 20 个字符
+											</td>
+											<td width="130" rowspan="4" id="headpic"
+												style="border-bottom: 1px #d2d2d2 solid; border-left: 1px #d2d2d2 solid; text-align: center;">
+												<div id="headpic2"></div>
+											</td>
+										</tr>
+
+										<tr>
+											<td height="30" align="right"
+												style="border-right: 1px #d2d2d2 solid; border-bottom: 1px #d2d2d2 solid;">您的名字：</td>
+											<td
+												style="border-bottom: 1px #d2d2d2 solid; padding-left: 5px;"><input
+												type="text" name="name" value="" class="input" id="input2"
+												maxlength="15">&nbsp;<font style="color: #ff0000;">*</font>
+											</td>
+											<td width="160"
+												style="border-bottom: 1px #d2d2d2 solid; padding-left: 5px;">
+												选择头像： <select name="headpicsel" id="headpicsel">
+													<option value="m01" selected="selected">选择头像</option>
+													<option value="m01">男孩1</option>
+													<option value="m02">男孩2</option>
+													<option value="m03">男孩3</option>
+													<option value="m04">男孩4</option>
+													<option value="m05">男孩5</option>
+													<option value="m06">男孩6</option>
+													<option value="m07">男孩7</option>
+													<option value="m08">男孩8</option>
+													<option value="m09">男孩9</option>
+													<option value="m10">男孩10</option>
+													<option value="m11">男孩11</option>
+													<option value="m12">男孩12</option>
+													<option value="w01">女孩1</option>
+													<option value="w02">女孩2</option>
+													<option value="w03">女孩3</option>
+													<option value="w04">女孩4</option>
+													<option value="w05">女孩5</option>
+													<option value="w06">女孩6</option>
+													<option value="w07">女孩7</option>
+													<option value="w08">女孩8</option>
+													<option value="w09">女孩9</option>
+													<option value="w10">女孩10</option>
+													<option value="w11">女孩11</option>
+													<option value="w12">女孩12</option>
+											</select>
+											</td>
+										</tr>
+
+										<tr>
+											<td height="30" align="right"
+												style="border-right: 1px #d2d2d2 solid; border-bottom: 1px #d2d2d2 solid;">电子邮件：</td>
+											<td colspan="2"
+												style="border-bottom: 1px #d2d2d2 solid; padding-left: 5px;"><input
+												type="text" name="email" value="" class="input" id="email1"></td>
+										</tr>
+
+										<tr>
+											<td height="30" align="right"
+												style="border-right: 1px #d2d2d2 solid; border-bottom: 1px #d2d2d2 solid;">QQ号码：</td>
+											<td colspan="2"
+												style="border-bottom: 1px #d2d2d2 solid; padding-left: 5px;"><input
+												type="text" name="qq" value="" class="input" id="qq1"></td>
+										</tr>
+
+										<tr>
+											<td height="30" align="right"
+												style="border-right: 1px #d2d2d2 solid; border-bottom: 1px #d2d2d2 solid;">主页地址：</td>
+											<td colspan="3"
+												style="border-bottom: 1px #d2d2d2 solid; padding-left: 5px;"><input
+												type="text" name="homepage" value="http://" class="input"
+												id="homePage1"></td>
+										</tr>
+
+										<tr>
+											<td width="123" align="right"
+												style="border-right: 1px #d2d2d2 solid; border-bottom: 1px #d2d2d2 solid;">当前心情：</td>
+											<td colspan="3"
+												style="border-bottom: 1px #d2d2d2 solid; padding-left: 5px;">
+												<ul class="mood">
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s13.gif" checked="checked"><img
+														src="img/guestbook/s13.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s10.gif"><img
+														src="img/guestbook/s10.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s11.gif"><img
+														src="img/guestbook/s11.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s12.gif"><img
+														src="img/guestbook/s12.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s13.gif"><img
+														src="img/guestbook/s13.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s14.gif"><img
+														src="img/guestbook/s14.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s15.gif"><img
+														src="img/guestbook/s15.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s16.gif"><img
+														src="img/guestbook/s16.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s17.gif"><img
+														src="img/guestbook/s17.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s18.gif"><img
+														src="img/guestbook/s18.gif" border="0"></li>
+												</ul>
+												<ul class="mood">
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s13.gif"><img
+														src="img/guestbook/s18.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s10.gif"><img
+														src="img/guestbook/s17.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s11.gif"><img
+														src="img/guestbook/s16.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s12.gif"><img
+														src="img/guestbook/s15.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s13.gif"><img
+														src="img/guestbook/s14.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s14.gif"><img
+														src="img/guestbook/s13.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s15.gif"><img
+														src="img/guestbook/s12.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s16.gif"><img
+														src="img/guestbook/s11.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s17.gif"><img
+														src="img/guestbook/s15.gif" border="0"></li>
+													<li><input type="radio" name="mood"
+														value="img/guestbook/s18.gif"><img
+														src="img/guestbook/s13.gif" border="0"></li>
+												</ul>
+											</td>
+										</tr>
+										<tr>
+											<td height="30" align="right"
+												style="border-right: 1px #d2d2d2 solid; border-bottom: 1px #d2d2d2 solid;">留言内容：</td>
+											<td colspan="3"
+												style="border-bottom: 1px #d2d2d2 solid; padding-left: 5px;">
+												<div id="remLen"
+													style="float: right; padding-top: 10px; padding-right: 30px;">您还能填写500个字符</div>
+												<textarea class="textarea" name="body" id="message"
+													style="width: 600px; height: 60px;"
+													onkeydown="textCounter();" onkeyup="textCounter();"></textarea>&nbsp;<font
+												color="#FF0000">*</font>
+											</td>
+										</tr>
+										<tr>
+											<td width="123" height="30" align="right"
+												style="border-right: 1px #d2d2d2 solid; border-bottom: 1px #d2d2d2 solid;">验
+												证 码：</td>
+											<td colspan="3"
+												style="border-bottom: 1px #d2d2d2 solid; padding-left: 5px;">
+												<div
+													style="white-space: nowrap; float: left; margin-top: 7px;">
+													<input type="text" name="ImgCode"
+														style="width: 50px; height: 25px" class="input" id="img2">
+												</div>
+												<div
+													style="cursor: pointer; white-space: nowrap; padding-left: 3px; float: left; margin-top: 4px;">
+													<img id="codeimg" src="vc.do" width="75" class="img1"
+														height="28" style="border: 1px #dddddd solid">
+												</div>
+												<div id="getImgCode"
+													style="cursor: pointer; margin-left: 10px; line-height: 30px">
+													<a href="javascript:" onClick="fresh();">看不清？换一张</a>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td width="123" align="right"></td>
+											<td colspan="3"></td>
+										</tr>
+										<tr>
+											<td width="123" align="right"
+												style="border-right: 1px #d2d2d2 solid;">&nbsp;</td>
+											<td height="30" colspan="3" style="padding-left: 5px;">
+												<input type="submit" name="Submit" value="提交" class="submit"
+												id="sub"> <input type="hidden" name="act"
+												value="formsend"> <input name="groupid"
+												type="hidden" id="groupid" value="">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</form>
+
+
+							<script language="JavaScript">     
+function textCounter(){     
+	if(myform.message.value.length > 500){     
+		myform.message.value = myform.message.value.substring(0, 500); 
+	}else{     
+		document.getElementById("remLen").innerHTML = "您还能填写" + (500 - myform.message.value.length) + "个汉字";     
+	} 
+} 
+</script>
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div id="bottom"
+			style="width: 900px; height: 172px; background: none 0% 0% repeat scroll transparent;">
+
+
+			<!-- 底部菜单（一级） -->
+
+			<div id="pdv_3410" class="pdv_class"
+				style="width: 900px; height: 35px; top: 0px; left: 0px; z-index: 2">
+				<div id="spdv_3410" class="pdv_bottom"
+					style="overflow: hidden; width: 100%; height: 100%">
+					<div class="pdv_border"
+						style="margin: 0px; padding: 0px; height: 35px; border: 0px solid;">
+						<div
+							style="height: 25px; margin: 1px; display: none; background:;">
+							<div
+								style="float: left; margin-left: 12px; line-height: 25px; font-weight: bold; color:">
+
+							</div>
+							<div style="float: right; margin-right: 10px; display: none">
+								<a href="-1" style="line-height: 25px; color:">更多</a>
+							</div>
+						</div>
+						<div style="padding: 0px">
+
+							<link href="css/bottom/A.css" rel="stylesheet" type="text/css">
+							<div id="bottommenu">
+
+								<a href="../page/html/?10.html" target="_self">关于我们</a>| <a
+									href="../page/html/?1.html" target="_self">订餐指南</a>| <a
+									href="../page/html/?11.html" target="_self">配送说明</a>| <a
+									href="../page/html/?2.html" target="_self">联系方式</a>| <a
+									href="../page/html/tsjy.php" target="_self">投诉建议</a>| <a
+									href="../job/index.php" target="_self">诚聘英才</a>|
+
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- 文字友情链接 -->
+
+			<div id="pdv_3407" class="pdv_class" title=""
+				style="width: 900px; height: 30px; top: 35px; left: 0px; z-index: 5">
+				<div id="spdv_3407" class="pdv_bottom"
+					style="overflow: hidden; width: 100%; height: 100%">
+					<div class="pdv_border"
+						style="margin: 0px; padding: 0px; height: 30px; border: 0px solid;">
+						<div
+							style="height: 25px; margin: 1px; display: none; background:;">
+							<div
+								style="float: left; margin-left: 12px; line-height: 25px; font-weight: bold; color:">
+
+							</div>
+							<div style="float: right; margin-right: 10px; display: inline">
+								<a href="../advs/link/" style="line-height: 25px; color:">更多</a>
+							</div>
+						</div>
+						<div style="padding: 5px">
+
+							<ul style="margin: 0; padding: 0">
+
+								<li
+									style="list-style-type: none; float: left; margin: 0px; padding: 3px 10px 3px 10px; white-space: nowrap">
+									<a href="http://food.39.net/" target="_self">39健康网</a>
+								</li>
+
+								<li
+									style="list-style-type: none; float: left; margin: 0px; padding: 3px 10px 3px 10px; white-space: nowrap">
+									<a href="http://eat.51ttyy.com/" target="_self">天天营养网</a>
+								</li>
+
+								<li
+									style="list-style-type: none; float: left; margin: 0px; padding: 3px 10px 3px 10px; white-space: nowrap">
+									<a href="http://www.canyin.com/" target="_self">中国餐饮网</a>
+								</li>
+
+								<li
+									style="list-style-type: none; float: left; margin: 0px; padding: 3px 10px 3px 10px; white-space: nowrap">
+									<a href="http://www.canyinshijie.com/" target="_self">餐饮世界网</a>
+								</li>
+
+								<li
+									style="list-style-type: none; float: left; margin: 0px; padding: 3px 10px 3px 10px; white-space: nowrap">
+									<a href="http://www.tesecai.cn/" target="_self">特色菜网</a>
+								</li>
+
+								<li
+									style="list-style-type: none; float: left; margin: 0px; padding: 3px 10px 3px 10px; white-space: nowrap">
+									<a href="http://www.westfood.com.cn/" target="_self">中国西餐网</a>
+								</li>
+
+								<li
+									style="list-style-type: none; float: left; margin: 0px; padding: 3px 10px 3px 10px; white-space: nowrap">
+									<a href="http://www.chinavegan.com/" target="_self">中华素食网</a>
+								</li>
+
+								<li
+									style="list-style-type: none; float: left; margin: 0px; padding: 3px 10px 3px 10px; white-space: nowrap">
+									<a href="http://www.kclm.org/" target="_self">中国快餐联盟网</a>
+								</li>
+
+								<li
+									style="list-style-type: none; float: left; margin: 0px; padding: 3px 10px 3px 10px; white-space: nowrap">
+									<a href="http://www.souchu.com/" target="_self">搜厨网</a>
+								</li>
+
+								<li
+									style="list-style-type: none; float: left; margin: 0px; padding: 3px 10px 3px 10px; white-space: nowrap">
+									<a href="http://www.cantingsheji.com/" target="_self">餐厅设计网</a>
+								</li>
+
+								<li
+									style="list-style-type: none; float: left; margin: 0px; padding: 3px 10px 3px 10px; white-space: nowrap">
+									<a href="http://www.meishichina.com/" target="_self">美食中国</a>
+								</li>
+
+							</ul>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- 底部信息编辑区 -->
+
+			<div id="pdv_3408" class="pdv_class" title="脚注信息"
+				style="width: 898px; height: 106px; top: 65px; left: 0px; z-index: 6">
+				<div id="spdv_3408" class="pdv_bottom"
+					style="overflow: hidden; width: 100%; height: 100%">
+					<div class="pdv_border"
+						style="margin: 0px; padding: 0px; height: 106px; border: 0px solid;">
+						<div
+							style="height: 25px; margin: 1px; display: none; background:;">
+							<div
+								style="float: left; margin-left: 12px; line-height: 25px; font-weight: bold; color:">
+								脚注信息</div>
+							<div style="float: right; margin-right: 10px; display: none">
+								<a href="-1" style="line-height: 25px; color:">更多</a>
+							</div>
+						</div>
+						<div style="padding: 0px">
+							<div
+								style="width: 100%; text-align: center; font: 12px/20px Arial, Helvetica, sans-serif">
+								<div style="LINE-HEIGHT: 30px">电话：0573-87654321
+									售前QQ：241457 45761112 地址：浙江省嘉兴市建国南路1586号 邮编：314000 （商务合作）</div>
+								<div style="LINE-HEIGHT: 30px">网上快餐店 Copyright(C)2009-2010</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- 图片/FLASH -->
+
+			<div id="pdv_3409" class="pdv_class" title=""
+				style="width: 123px; height: 40px; top: 105px; left: 656px; z-index: 7">
+				<div id="spdv_3409" class="pdv_bottom"
+					style="overflow: hidden; width: 100%; height: 100%">
+					<div class="pdv_border"
+						style="margin: 0px; padding: 0px; height: 40px; border: 0px solid;">
+						<div
+							style="height: 25px; margin: 1px; display: none; background:;">
+							<div
+								style="float: left; margin-left: 12px; line-height: 25px; font-weight: bold; color:">
+
+							</div>
+							<div style="float: right; margin-right: 10px; display: none">
+								<a href="-1" style="line-height: 25px; color:">更多</a>
+							</div>
+						</div>
+						<div style="padding: 0px">
+
+
+							<img src="img/bottom/1253157163.jpg" border="0" width="100%">
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="bodyex"></div>
+	﻿
+	<div
+		style="width: 970px; height: 90px; text-align: center; margin: 0px auto;">
+		<script type="text/javascript">
+    google_ad_client = "ca-pub-9248193808927380";
+    google_ad_slot = "5627524808";
+    google_ad_width = 970;
+    google_ad_height = 90;
+</script>
+		<!-- 565665 -->
+		<script type="text/javascript"
+			src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+		<ins id="aswift_0_expand"
+			style="display: inline-table; border: none; height: 90px; margin: 0; padding: 0; position: relative; visibility: visible; width: 970px; background-color: transparent;">
+			<ins id="aswift_0_anchor"
+				style="display: block; border: none; height: 90px; margin: 0; padding: 0; position: relative; visibility: visible; width: 970px; background-color: transparent;">
+				<iframe width="970" height="90" frameborder="0" marginwidth="0"
+					marginheight="0" vspace="0" hspace="0" allowtransparency="true"
+					scrolling="no" allowfullscreen="true"
+					onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}"
+					id="aswift_0" name="aswift_0"
+					style="left: 0; position: absolute; top: 0; width: 970px; height: 90px;"></iframe>
+			</ins>
+		</ins>
+	</div>
+
+	<div style="display: none">
+
+		<script language="javascript" type="text/javascript"
+			src="//js.users.51.la/17595573.js"></script>
+		<a href="http://www.51.la/?17595573" target="_blank"
+			title="51.La 网站流量统计系统">网站统计</a>
+
+
+	</div>
+
+</body>
+</html>

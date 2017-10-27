@@ -58,4 +58,5 @@ public interface VipDao {
 	 * @param vip
 	 */
 	public void UpdataVipInfo(Vip vip);// 会员修改信息
+	public Boolean findPhoneUsed(String phone);
 }

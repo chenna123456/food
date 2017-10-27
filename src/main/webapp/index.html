@@ -1,172 +1,386 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="UTF-8">
-		<title></title>
-		<link type="text/css" href="css/index.css" rel="stylesheet"/>
-	</head>
-	<body>
-		<div class="all">
-			<div class="header"></div>
-			<div class="middle">
-				<div class="left">
-					<div class="header1">
-						<div class="left1"></div>
-						<div class="mid">
-							<div>
-								<div class="zx">自选套餐</div>
-								<div class="gd">固定套餐</div>
-								<div class="zh">组合套餐</div>
+<head>
+<meta charset="UTF-8">
+<title>网上订餐商城</title>
+<link type="text/css" href="css/index.css" rel="stylesheet" />
+<link rel="stylesheet" href="css/1111.css" type="text/css" />
+<link rel="stylesheet" href="css/index1.css" type="text/css" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/singleFood.js"></script>
+<script type="text/javascript" src="js/fixedFood.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+
+</head>
+<body>
+	<div class="all">
+		<!--所有内容都写在"topps" div中  nav 代表左上角的小导航条样式 nav2代右下角首页大导航条样式 nav2_ul 代表右下角大导航条中ul样式  其余部分未写class-->
+		<div class="topps">
+			<div class="log">
+				<img src="img/1257477260.gif" />
+			</div>
+			<div class="nav">
+				<a href="orderGuide.html">关于我们&nbsp;&nbsp;</a><font color="black">|</font> <a
+					href="orderGuide.html">订餐指南&nbsp;&nbsp;</a><font color="black">|</font> <a
+					href="Regin.html">会员注册&nbsp;&nbsp;</a><font color="black">|</font> <a
+					href="Login.html">会员登录&nbsp;&nbsp;</a><font color="black">|</font> <a
+					href="VipCenter.html">会员中心&nbsp;&nbsp;</a><font color="black">|</font> <a
+					href="VipCenter.html">我的订单&nbsp;&nbsp;</a><font color="black">|</font> <a
+					href="VipCenter.html">我的积分&nbsp;&nbsp;</a><font color="black">|</font>
+			</div>
+			<div class="nav2">
+				<ul class=nav2_ul>
+					<li><a href="#">首页</a></li>
+					<li><a href="Select.html">订单查询</a></li>
+					<li><a href="#">在线充值</a></li>
+					<li><a href="jfdh.html">积分换赠</a></li>
+					<li><a href="wf.html">每周菜谱</a></li>
+					<li><a href="foodculture.html">饮食文化</a></li>
+					<li><a href="guestbook.html">顾客留言</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+		<div class="middle">
+			<div class="left">
+				<div class="header1">
+					<div class="left1"></div>
+					<div class="mid">
+						<div>
+							<div class="zx"><a class="foodPackage">自选套餐</a></div>
+							<div class="gd"><a class="foodPackage">固定套餐</a></div>
+							<div class="zh"><a class="foodPackage">组合套餐</a></div>
+						</div>
+					</div>
+					<div class="right1"></div>
+					&nbsp;
+				</div>
+				<div class="content">
+
+					<div class="mm_01">
+						<div class="b">
+							<div class="c">
+							<div class="c2"></div>
+								<div class="dccat">
+									<div class="dd2"><a class="optionalFoodType">单点餐品</a></div>
+									&nbsp;|&nbsp;
+								</div>
+								<div class="dccat">
+									<div class="yz"><a class="optionalFoodType">营养主食</a></div>
+									&nbsp;|&nbsp;
+								</div>
+								<div class="dccat">
+									<div class="dx"><a class="optionalFoodType">点心小吃</a></div>
+									&nbsp;|&nbsp;
+								</div>
+								<div class="dccat">
+									<div class="mw"><a class="optionalFoodType">美味汤品</a></div>
+									&nbsp;|&nbsp;
+								</div>
+								<div class="dccat">
+									<div class="js"><a class="optionalFoodType">酒水饮料</a></div>
+									&nbsp;|&nbsp;
+								</div>
+								<div class="dccat">
+									<div class="fruit"><a class="optionalFoodType">新鲜水果</a></div>
+								</div>
+
 							</div>
 						</div>
-						<div class="right1"></div>&nbsp;
-					</div>
-					<div class="content">
-						<div class="mm_01">
-							<div class="b">
-								<div class="c">
-										<div class="dccat">
-											<div class="dd">单点餐品</div>&nbsp;|&nbsp;
-										</div>
-										<div class="dccat">
-											<div class="yz">营养主食</div>&nbsp;|&nbsp;
-										</div>
-										<div class="dccat">
-											<div class="dx">点心小吃</div>&nbsp;|&nbsp;
-										</div>
-										<div class="dccat">
-											<div class="mw">美味汤品</div>&nbsp;|&nbsp;
-										</div>
-										<div class="dccat">
-											<div class="js">酒水饮料</div>&nbsp;|&nbsp;
-										</div>
-										<div class="dccat">
-											<div class="fruit">新鲜水果</div>
-										</div>
-									</div>
+						<div class="smm_01">
+							<div class="dc">
+								<div class="dc_left"></div>
+								<div class="dc_right"></div>
+								<div class="dc_mid">10元以下餐品</div>
 							</div>
-							<div class="smm_01">
-									<div class="dc">
-										<div class="dc_left"></div>
-										<div class="dc_right"></div>
-										<div class="dc_mid">10元以下餐品</div>
-									</div>
-							 	<div class="u">
+							<div class="ds">
 								<ul>
-									
-										<li>
-											<div class="capinlist1">
-												<div class="capinlist1_left">
-													<div class="fang">
-														<div class="pic">
-															
-														</div>
-														
-															<span class="pro">
-															
-															</span>
-														
-													</div>
-												</div>
-												<div class="capinlist1_right">
-													<span class="word">
-														<div class="cname">
-															菜名:<font class="cm"></font>
-															</div>
-														<div class="cp">
-															单价:<font class="price"></font>元/份
-														</div>
-														<div class="jf">
-															积分:<font class="jf1"></font>分/份
-														</div>
-														<div class="z">
-															主料:<font class="zhu"></font>
-														</div>
-														<div class="tas">
-															口味:<font class="taste"></font>
-														</div>
-														<div class="store">
-															可定分数:<font class="stores"></font>份
-														</div>
-														<div class="amount">
-															份数:<select class="selnum">
-																
-															</select>
-														</div>
-														<div class="gw">
-															<img class="im" src="img/gw.gif"/>
-														</div>
-													</span>
-													
-												</div>
-											</div>
-										</li>
+
+
 								</ul>
-								<div>
-						请输入页码:<input type="number" class="in" min="1">
-						<input type="button" value="跳转" id="go"><br>
-						<input type="button" value="上一页" class="s">
-						<span class="footer"></span>
-						<input type="button" value="下一页" class="s">
-								</div>
+
 							</div>
-								<div class="dc1">
-										<div class="dc_left"></div>
-										<div class="dc_right"></div>
-										<div class="dc_mid">10~20元餐品</div>
-									</div>
-									<ul>
-										<div class="ds1">
-											
-										</div>
-									</ul>
-									<!--20~50元餐品-->
-									<div class="dc2">
-										<div class="dc_left"></div>
-										<div class="dc_right"></div>
-										<div class="dc_mid">20~50元餐品</div>
-									</div>
-									<ul>
-										<div class="ds2">
-											
-										</div>
-									</ul>
-									<!--50元以上餐品-->
-									<div class="dc3">
-										<div class="dc_left"></div>
-										<div class="dc_right"></div>
-										<div class="dc_mid">50元以上餐品</div>
-									</div>
-									<ul>
-										<div class="ds3">
-											
-										</div>
-									</ul>
-									
-									
-								</div>
+							<div class="dc1">
+								<div class="dc_left"></div>
+								<div class="dc_right"></div>
+								<div class="dc_mid">10~20元餐品</div>
 							</div>
-							<div class="mm_02"></div>
-							<div class="mm_03"></div>
+
+							<ul>
+								<div class="ds1"></div>
+							</ul>
+							<!--20~50元餐品-->
+							<div class="dc2">
+								<div class="dc_left"></div>
+								<div class="dc_right"></div>
+								<div class="dc_mid">20~50元餐品</div>
+							</div>
+							<ul>
+								<div class="ds2"></div>
+							</ul>
+							<!--50元以上餐品-->
+							<div class="dc3">
+								<div class="dc_left"></div>
+								<div class="dc_right"></div>
+								<div class="dc_mid">50元以上餐品</div>
+							</div>
+							<ul>
+								<div class="ds3"></div>
+							</ul>
+
+
+						</div>
+						<div class="smm_02"></div>
 						
 					</div>
-					<div class="buttom_left">&nbsp;</div>
-					<div class="buttom_right">&nbsp;</div>
+					<!-- 用来放固定套餐的页面层 -->
+					<div class="mm_02">
+						
+					</div>
+					<div class="mm_03">
+						<div class="dccat">
+							<ul>
+								<li>
+									<select class="sumFoodSelect">
+										<option value="8"><span>8元组合套餐</span></option>
+										<option value="10"><span>10元组合套餐</span></option>
+										<option value="12"><span>12元组合套餐</span></option>
+									</select>
+								</li>
+								<li>
+									套餐价格:<span class="taoCPrice"></span>元/份
+								</li>
+								<li>
+									积分:<span class="taoCPoints"></span>分
+								</li>
+								<li>(荤菜:<a class="huncaiNum"></a>&nbsp;&nbsp;
+								素菜:<a class="sucaiNum"></a>&nbsp;&nbsp;
+								汤:<a class="tanNum">1</a>)</li>
+							</ul>
+						</div>
+						<div class="dc">
+								<div class="dc_left"></div>
+								<div class="dc_right"></div>
+								<div class="dc_mid">荤菜</div>
+							</div>	
+						<div class="ds5">
+							
+						</div>
+						<div class="dc">
+								<div class="dc_left"></div>
+								<div class="dc_right"></div>
+								<div class="dc_mid">素菜</div>
+							</div>	
+						<div class="ds6">
+							
+						</div>
+						<div class="dc">
+								<div class="dc_left"></div>
+								<div class="dc_right"></div>
+								<div class="dc_mid">汤</div>
+							</div>		
+						<div class="ds7"></div>
+						<br>
+						<br>
+						<div style="float: left; margin-left:500px">
+							<a class="sumfoodShop"><img src="icon/gw.jpg" /></a>
+						</div>
+					</div>
+
 				</div>
-				<!--图片-->
-				<div class="pdv">
-					<div class="pdv_content">
-						<div class="pdv_bor">
-							<div style="padding: 0px;">
-								<img src="img/pvd_bor.jpg" border="0px" width="100%"/>
+				<div class="buttom_left">&nbsp;</div>
+				<div class="buttom_right">&nbsp;</div>
+			</div>
+			<!--图片-->
+			<div class="pdv">
+				<div class="pdv_content">
+					<div class="pdv_bor">
+						<div style="padding: 0px;">
+							<img src="img/pvd_bor.jpg" border="0px" width="100%" />
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="right">
+				<!--订餐时间-->
+				<div id="dingcantime">
+					<div id="img_timer">
+						<img src="img/timer.png">
+					</div>
+					<div id="dingcantime_zi">订餐时间</div>
+					<font color="#feab43";>&nbsp;----------------------------------&nbsp;</font>
+					<div id="dingcantime2">
+						<div style="height: 24px; font-size: 14px; font-weight: bold;">
+							<font style="color: #ef6906;">午餐：</font> <font
+								style="color: #404040;">9:00&nbsp;-&nbsp;13:00</font>
+						</div>
+						<div style="height: 24px; font-size: 14px; font-weight: bold;">
+							<font style="color: #ef6906;">晚餐：</font> <font
+								style="color: #404040;">16:00&nbsp;-&nbsp;19:00</font>
+						</div>
+						<div id="zhujie">注：周六日或其他时间用餐，请提前来电</div>
+						<div id="dianhuadingcan">电话订餐：40080088</div>
+						<div style="text-align: center;">
+							<a class="qqb" target="blank"
+								href="http://wpa.qq.com/msgrd?v=1&Uin=100861&Site=siyizhu.comMenu=no"
+								title="当前离线或隐身"><img src="img/qq_offline.gif" border="0"
+								style="cursor: pointer;">&nbsp;&nbsp;&nbsp; </a>
+
+							<div id="msn">
+								<a href="msnim:chat?contact=dingcan@hotmail.com"
+									style='font-weight: bold; color: #ee6a06;' tareget='_blank'>
+									<font style="font-size: 14px; color: #f16906;">msn:dingcan@hotmail.com</font>
+								</a> <img src="img/msn.gif" border="0" />
 							</div>
 						</div>
 					</div>
-										
 				</div>
-				<div class="right"></div>
+				<!--订餐车-->
+				<div id="dingcanche">
+					<div id="dingcanche2">
+						<div id="dingcanche_top">
+							<div id="dingcanche_top_left">我的餐车</div>
+							<div id="dingcanche_top_right">
+								<img src="img/zimu.png" />
+							</div>
+						</div>
+						<!--订餐车列表-->
+						<div style="margin-bottom: 10px;">
+							<div
+								style="height: 13px; background: #f6f6f6; margin: 0px 3px 1px 3px;">
+								<div style="float: left; padding-left: 50px; font-size: 14px;">名称</div>
+								<div style="float: right; padding-right: 8px; font-size: 14px;">取消</div>
+								<div style="float: right; padding-right: 8px; font-size: 14px;">份数</div>
+								<div style="float: right; padding-right: 8px; font-size: 14px;">单价</div>
+							</div>
+
+							<!--动态添加订餐信息-->
+							
+
+
+							<div
+								style="height: auto; margin: 5px 3px 1px 3px; font-size: 14px;">
+								<div class="shopCar">
+								<table class="shopCarTable" cellspacing="0">
+									<tr class="shopCarTableFoot">
+										<td class="tdFoodName">小计:</td>
+										<td class="tdOther"><a>0</a>元</td>
+										<td class="tdSC"><a>0</a>份</td>
+										<td class="tdOther"></td>
+									</tr>
+								</table>
+							</div>
+								<!--提交---全部取消按钮-->
+								<div style="height: 26px; margin: 5px 3px 1px 3px;">
+									<div id="cartsubmit">
+										<a class="subAllShopCar"><img src="img/canche_submit.gif" border="0" /></a>
+									</div>
+									<div id="reset_btn">
+										<a class="cancelAllShopCar"><img src="img/quxiao2.gif" border="0" /></a>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+
+
+				</div>
+				<!--网站公告-->
+				<div id="website_notice">
+					<div id="website_top">
+						<div id="website_top_left">
+							<img src="img/notice.png" style="margin-top: 10px;" />
+							<div style="float: right; padding-left: 20px; margin-top: 5.5px;">网站公告</div>
+						</div>
+						<div id="website_top_right">
+							<a href="aticle_list_more"
+								style="font: 12px/43px simsun; color: #505050; margin-right: 12px; display: inline; text-decoration: none;">更多>>
+							</a>
+						</div>
+						<font color="#feab43";>&nbsp;----------------------------------&nbsp;</font>
+					</div>
+					<div id="article_list">
+						<ul class="newslist_time2">
+							<li class="newslist_time2">
+								<div class="time">09/27</div> <a href="news/html/?297.html"
+								target="_self" class="newslist_time2"> 金秋来临，菜品赠品大升级 </a>
+							</li>
+							<li class="newslist_time2">
+								<div class="time">09/27</div> <a href="news/html/?296.html"
+								target="_self" class="newslist_time2"> 积分换电影票，奖品大变样 </a>
+							</li>
+							<li class="newslist_time2">
+								<div class="time">09/27</div> <a href="news/html/?295.html"
+								target="_self" class="newslist_time2"> 精品盖浇饭上市喽 </a>
+							</li>
+							<li class="newslist_time2">
+								<div class="time">09/27</div> <a href="news/html/?294.html"
+								target="_self" class="newslist_time2"> 10月团体订餐优惠活动开始 </a>
+							</li>
+							<li class="newslist_time2">
+								<div class="time">09/27</div> <a href="news/html/?293.html"
+								target="_self" class="newslist_time2"> 节日放假通知 </a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!--本周菜单-->
+				<div class="dingcanweekmenu2">
+					<div class="dingcanmenu_top">
+						<img src="img/benzhoucaidan.png" />
+					</div>
+					<div class="dingcanweekmenuinfo">
+						<table border="0" width="100%" cellpadding="3" cellspacing="0"
+							height="50px" style="background: #fef0d3;" id="riqi">
+						</table>
+					</div>
+				</div>
+
 			</div>
-			<div class="footer"></div>
+
+			<div class="foots">
+				<div class="bottommenu">
+					<div class="bottommenu1">
+						<a href="orderGuide.html">关于我们&nbsp;&nbsp;</a><font color="black">|</font> <a
+							href="orderGuide.html">订餐指南&nbsp;&nbsp;</a><font color="black">|</font> <a
+							href="orderGuide.html">配送说明&nbsp;&nbsp;</a><font color="black">|</font> <a
+							href="orderGuide.html">联系方式&nbsp;&nbsp;</a><font color="black">|</font> <a
+							href="orderGuide.html">投诉建议&nbsp;&nbsp;</a><font color="black">|</font> <a
+							href="orderGuide.html">诚聘英才&nbsp;&nbsp;</a><font color="black">|</font>
+					</div>
+
+				</div>
+				<div class="pdv_">
+					<ul>
+						<li><a href="#">39健康网</a></li>
+						<li><a href="#">天天营养网</a></li>
+						<li><a href="#">中国餐饮网</a></li>
+						<li><a href="#">餐饮世界网</a></li>
+						<li><a href="#">特色菜网</a></li>
+						<li><a href="#">中国西餐网</a></li>
+						<li><a href="#">中华素食网</a></li>
+						<li><a href="#">中国快餐网</a></li>
+						<li><a href="#">搜厨网</a></li>
+						<li><a href="#">餐厅设计</a></li>
+						<li><a href="#">美食中国</a></li>
+					</ul>
+				</div>
+				<div class="bottommenu2">电话：00000000000 售前QQ：0000000 0000
+					地址XXXXXXXXXXXXXX 邮码 00000(商务合作)</div>
+				<div class="bottommenu2">网上快餐店 Copyright(C)2009-2010</div>
+				<div class="img1">
+					<img src="img/1253157163.jpg" />
+				</div>
+
+
+
+			</div>
+
 		</div>
-	</body>
+</body>
 </html>

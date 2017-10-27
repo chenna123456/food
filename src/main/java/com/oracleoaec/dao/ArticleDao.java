@@ -64,4 +64,8 @@ public interface ArticleDao {
 	 * @param article
 	 */
 	void updateSricle(Article article);
+	void updateBrowsing(int browsing,int id);
+	List<Article> findPages(int page,int pageSize);
+	void updateSup(int sup, int id);
+	void updateopp(int opp, int id);
 }

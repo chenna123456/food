@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title></title>
+<link rel="stylesheet" href="css/topp.css" type="text/css" />
+<link rel="stylesheet" href="css/common.css" type="text/css" />
+</head>
+
+<body>
+	<!--所有内容都写在"topps" div中  nav 代表左上角的小导航条样式 nav2代右下角首页大导航条样式 nav2_ul 代表右下角大导航条中ul样式  其余部分未写class-->
+	<div id="contain"
+		style="width: 900px; background: rgb(255, 255, 255); margin: 0px auto; padding: 0px">
+
+		<div class="topps">
+			<div class="log">
+				<img src="img/1257477260.gif" />
+			</div>
+			<div class="nav">
+				<a href="#">关于我们</a> <font color="black">|</font> <a href="#">订餐指南</a>
+				<font color="black">|</font> <a href="#">会员注册</a> <font
+					color="black">|</font> <a href="#">会员登录</a> <font color="black">|</font>
+				<a href="#">会员中心</a> <font color="black">|</font> <a href="#">我的订单</a>
+			</div>
+			<div class="nav2">
+				<ul class=nav2_ul>
+					<li><a href="index.html">首页</a></li>
+					<li><a href="Select.html">订单查询</a></li>
+					<li><a href="#">在线充值</a></li>
+					<li><a href="jfdh.html">积分换赠</a></li>
+					<li><a href="wf.html">每周菜谱</a></li>
+					<li><a href="foodculture.html">饮食文化</a></li>
+					<li><a href="guestbook.html">顾客留言</a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+		<div id="content"
+			style="width: 900px; height: 713px; background-image: none; background-attachment: scroll; background-color: transparent; margin: 10px auto; background-position: 0% 0%; background-repeat: repeat repeat;">
+
+			<!-- 当前位置提示条 -->
+
+			<div id="pdv_3566" class="pdv_class" title="当前位置"
+				style="width: 650px; height: 30px; top: 0px; left: 0px; z-index: 8">
+				<div id="spdv_3566" class="pdv_content"
+					style="overflow: hidden; width: 100%; height: 100%">
+					<div class="pdv_border"
+						style="margin: 0px; padding: 0px; height: 30px; border: 0px solid rgb(221, 221, 221); background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial;">
+						<div
+							style="height: 25px; margin: 1px; display: none; background: #cccccc;">
+							<div
+								style="float: left; margin-left: 12px; line-height: 25px; font-weight: bold; color: #fff">
+								当前位置</div>
+							<div style="float: right; margin-right: 10px; display: none">
+								<a href="-1" style="line-height: 25px; color: #fff">更多</a>
+							</div>
+						</div>
+						<div style="padding: 5px">
+
+							<link href="css/nav.css" rel="stylesheet" type="text/css">
+							<div id="nav">
+								您现在的位置： <a href="../">网上快餐店</a> &gt; <a href="../dingcan/">网上订餐</a>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- 订单详情 -->
+
+			<div id="pdv_3567" class="pdv_class" title=""
+				style="width: 650px; height: 680px; top: 33px; left: 0px; z-index: 9;">
+				<div id="spdv_3567" class="pdv_content"
+					style="overflow: visible; width: 100%;">
+					<div class="pdv_border"
+						style="margin: 0; padding: 0; height: 100%; border: 0px #dddddd solid; background: #fff;">
+						<div
+							style="height: 25px; margin: 1px; display: none; background:;">
+							<div
+								style="float: left; margin-left: 12px; line-height: 25px; font-weight: bold; color:">
+
+							</div>
+							<div style="float: right; margin-right: 10px; display: none">
+								<a href="-1" style="line-height: 25px; color:">更多</a>
+							</div>
+						</div>
+						<div style="padding: 0px">
+
+							<link href="css/orderdetail.css" rel="stylesheet" type="text/css">
+							<script type="text/javascript" src="js/jquery.js"></script>
+							<script type="text/javascript" src="js/Orderdetail.js"></script>
+
+							<div id="dingcanorderdetail">
+								<div class="ordertitle">
+									<div
+										style="float: right; font: bold 14px/35px Verdana, Arial, Helvetica, sans-serif;"
+										id="orderNumMJZ">&nbsp;</div>
+									网上快餐店订单
+								</div>
+
+								<div class="tit">订购人信息</div>
+								<table width="100%" border="0" cellpadding="3" cellspacing="1"
+									bgcolor="#ddeeff">
+
+									<tbody>
+										<tr>
+											<td width="80" height="25" align="center" class="itemname">订
+												购 人</td>
+											<td width="220" valign="top" bgcolor="#FFFFFF" id="vipName"></td>
+											<td height="25" align="center" class="itemname">联系电话</td>
+											<td width="220" valign="top" bgcolor="#FFFFFF" id="vipPhone"></td>
+										</tr>
+
+										<tr>
+											<td height="25" align="center" class="itemname">下单时间</td>
+											<td width="220" valign="top" bgcolor="#FFFFFF" id="orderTime"></td>
+											<td height="25" align="center" class="itemname">详细地址</td>
+											<td width="220" valign="top" bgcolor="#FFFFFF"
+												id="addressMjz"></td>
+										</tr>
+										<tr>
+
+											<td align="center" valign="top" class="itemname">配送中心</td>
+											<td height="25" valign="top" bgcolor="#FFFFFF">城南配送中心</td>
+											<td height="25" align="center" class="itemname">收货时间</td>
+											<td width="220" valign="top" bgcolor="#FFFFFF"
+												id="paymentTimeMjz"></td>
+										</tr>
+
+									</tbody>
+								</table>
+
+								<div class="tit1">商品清单</div>
+
+								<table width="100%" border="0" cellpadding="3" cellspacing="1"
+									bgcolor="#ddeeff" style="margin-bottom: 10px"
+									id="orderDetailMjz">
+
+									<tr valign="top">
+										<td height="25" align="center" class="itemname">餐品名称</td>
+										<td width="80" align="center" class="itemname">单价 (元)</td>
+										<td width="50" align="center" class="itemname">数量</td>
+										<td width="80" align="center" class="itemname">小计 (元)</td>
+										<td width="50" align="center" class="itemname">发货</td>
+									</tr>
+
+
+
+
+								</table>
+								
+
+								<div class="totaldiv">
+									商品总价：<span id="goodsPriceMJZ"></span>元 &nbsp;配送费用：<span>6.00</span> 元
+									&nbsp;订单总金额：<span id="tatalPriceMJZ"></span> 元 &nbsp; <br> 订购时间：<span id="orderTimeMJZ">2017-10-19</span>&nbsp;
+									付款方式：送餐上门收款 &nbsp;付款时间：<span id="stateMJZ">未付款</span>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- 本周菜单 -->
+
+			<div id="pdv_3787" class="pdv_class" title="本周菜单"
+				style="width: 245px; height: 170px; top: 0px; left: 655px; z-index: 10">
+				<div id="spdv_3787" class="pdv_content"
+					style="overflow: hidden; width: 100%; height: 100%">
+					<div class="pdv_border"
+						style="margin: 0px; padding: 0px; height: 170px; border: 0px solid;">
+						<div
+							style="height: 25px; margin: 1px; display: none; background:;">
+							<div
+								style="float: left; margin-left: 12px; line-height: 25px; font-weight: bold; color:">
+								本周菜单</div>
+							<div style="float: right; margin-right: 10px; display: none">
+								<a href="-1" style="line-height: 25px; color:">更多</a>
+							</div>
+						</div>
+						<div style="padding: 0px">
+
+							<link href="css/dincanweek.css" rel="stylesheet" type="text/css">
+
+							<div id="dingcanweekmenu">
+								<div id="dingcanweekmenu2">
+
+									<div id="dingcanweekmenu_top">
+										<div id="dingcanweekmenu_top_left">本周菜单</div>
+										<div id="dingcanweekmenu_top_right">&nbsp;</div>
+									</div>
+
+									<div style="padding: px;">
+
+										<div class="dingcanweekmenuinfo">
+
+											<table width="100%" border="0" cellspacing="0"
+												cellpadding="3" height="30" style="background: #fef0d3;">
+												<tbody>
+													<tr>
+														<td rowspan="5" align="center" valign="top"><span
+															style="background: #f99d20; color: #ffffff;">10/11</span></td>
+														<td>一</td>
+														<td>二</td>
+														<td>三</td>
+														<td>四</td>
+														<td>五</td>
+														<td>六</td>
+														<td>日</td>
+													</tr>
+
+													<tr>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=16"
+															class="puriqiclass">16</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=17"
+															class="puriqiclass">17</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=18"
+															class="puriqiclass">18</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=19"
+															class="puriqiclass">19</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=20"
+															class="puriqiclass">20</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=21"
+															class="puriqiclass">21</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=22"
+															class="puriqiclass">22</a></td>
+													</tr>
+													<tr>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=23"
+															class="puriqiclass">23</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=24"
+															class="puriqiclass">24</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=25"
+															class="puriqiclass">25</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=26"
+															class="puriqiclass">26</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=27"
+															class="puriqiclass">27</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=28"
+															class="puriqiclass">28</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=29"
+															class="puriqiclass">29</a></td>
+													</tr>
+													<tr>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=30"
+															class="puriqiclass">30</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=10&amp;d=31"
+															class="puriqiclass">31</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=11&amp;d=01"
+															class="puriqiclass">01</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=11&amp;d=02"
+															class="puriqiclass">02</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=11&amp;d=03"
+															class="puriqiclass">03</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=11&amp;d=04"
+															class="puriqiclass">04</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=11&amp;d=05"
+															class="puriqiclass">05</a></td>
+													</tr>
+													<tr>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=11&amp;d=06"
+															class="puriqiclass">06</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=11&amp;d=07"
+															class="puriqiclass">07</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=11&amp;d=08"
+															class="puriqiclass">08</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=11&amp;d=09"
+															class="puriqiclass">09</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=11&amp;d=10"
+															class="puriqiclass">10</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=11&amp;d=11"
+															class="puriqiclass">11</a></td>
+														<td class="riqi"><a
+															href="../dingcan/caipu.php?m=11&amp;d=12"
+															class="puriqiclass">12</a></td>
+													</tr>
+
+												</tbody>
+											</table>
+
+										</div>
+
+									</div>
+
+								</div>
+							</div>
+
+							<div id="dingcanweekmenu_bottom_left">&nbsp;</div>
+							<div id="dingcanweekmenu_bottom_right">&nbsp;</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<!-- 文章列表 -->
+
+			<div id="pdv_3788" class="pdv_class" title="网站公告"
+				style="width: 245px; height: 316px; top: 176px; left: 655px; z-index: 11">
+				<div id="spdv_3788" class="pdv_content"
+					style="overflow: hidden; width: 100%; height: 100%">
+					<div class="pdv_border"
+						style="border: 0px; height: 316px; padding: 0px; margin: 0px; background-image: url(http://demo.phpweb2.com/2030/base/border/640/images/left.jpg); background-position: initial initial; background-repeat: no-repeat repeat;">
+						<div
+							style="height: 100%; background: url(../base/border/640/images/right.jpg) right repeat-y">
+							<div
+								style="height: 43px; background: url(../base/border/640/images/bg.jpg) 0px 0px no-repeat">
+								<div
+									style="float: left; font: bold 16px/43px 'Microsoft YaHei', 'SimSun', Arial, Sans-Serif; text-align: left; padding-left: 50px; color: #feab43;">
+									网站公告</div>
+								<div
+									style="float: right; width: 60px; height: 43px; text-align: right; background: url(../base/border/640/images/bg.jpg) -840px 0px no-repeat">
+									<a href="../news/class/"
+										style="font: 12px/43px simsun; color: #505050; margin-right: 12px; display: inline">更多&gt;&gt;</a>
+								</div>
+							</div>
+							<div style="margin: 0px 3px; padding: 10px;">
+
+								<link href="css/newslist.css" rel="stylesheet" type="text/css">
+								<ul class="newslist">
+
+									<li class="newslist"><a href="../news/html/?297.html"
+										target="_self" class="newslist">金秋来临，菜品赠品大升级</a></li>
+
+									<li class="newslist"><a href="../news/html/?296.html"
+										target="_self" class="newslist">积分换电影票，奖品大变样</a></li>
+
+									<li class="newslist"><a href="../news/html/?295.html"
+										target="_self" class="newslist">精品盖浇饭上市喽</a></li>
+
+									<li class="newslist"><a href="../news/html/?294.html"
+										target="_self" class="newslist">10月团体订餐优惠活动开始</a></li>
+
+									<li class="newslist"><a href="../news/html/?293.html"
+										target="_self" class="newslist">节日放假通知</a></li>
+
+								</ul>
+
+							</div>
+						</div>
+					</div>
+					<div
+						style="margin-top: -10px; height: 10px; line-height: 10px; background: url(../base/border/640/images/bg.jpg) 0px -220px no-repeat">&nbsp;</div>
+					<div
+						style="float: right; margin-top: -10px; width: 10px; height: 10px; line-height: 10px; background: url(../base/border/640/images/bg.jpg) -890px -220px no-repeat">&nbsp;</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="foots">
+			<div class="bottommenu">
+				<div class="bottommenu1">
+					<a href="#">关于我们&nbsp;</a> <font color="black">|</font> <a href="#">订餐指南&nbsp;</a>
+					<font color="black">|</font> <a href="#">配送说明&nbsp;</a> <font
+						color="black">|</font> <a href="#">联系方式&nbsp;</a> <font
+						color="black">|</font> <a href="#">联系方式&nbsp;</a> <font
+						color="black">|</font> <a href="#">投诉建议&nbsp;</a> <font
+						color="black">|</font> <a href="#">诚聘英才&nbsp;</a> <font
+						color="black">|</font>
+				</div>
+
+			</div>
+			<div class="pdv_">
+				<ul>
+					<li><a href="#">39健康网</a></li>
+					<li><a href="#">天天营养网</a></li>
+					<li><a href="#">中国餐饮网</a></li>
+					<li><a href="#">餐饮世界网</a></li>
+					<li><a href="#">特色菜网</a></li>
+					<li><a href="#">中国西餐网</a></li>
+					<li><a href="#">中华素食网</a></li>
+					<li><a href="#">中国快餐网</a></li>
+					<li><a href="#">搜厨网</a></li>
+					<li><a href="#">餐厅设计</a></li>
+					<li><a href="#">美食中国</a></li>
+				</ul>
+			</div>
+			<div class="bottommenu2">电话：00000000000 售前QQ：0000000 0000
+				地址XXXXXXXXXXXXXX 邮码 00000(商务合作)</div>
+			<div class="bottommenu2">网上快餐店 Copyright(C)2009-2010</div>
+			<div class="img1">
+				<img src="img/1253157163.jpg" />
+			</div>
+
+		</div>
+
+	</div>
+</body>
+
+</html>

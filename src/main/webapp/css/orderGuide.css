@@ -1,0 +1,70 @@
+div.titlemenu_b2 a.titlemenu_ll:link, 
+div.titlemenu_b2 a.titlemenu_ll:visited,
+div.titlemenu_b2 a.titlemenu_ll:active,
+div.titlemenu_b2 a.titlemenu_yc:link, 
+div.titlemenu_b2 a.titlemenu_yc:visited,
+div.titlemenu_b2 a.titlemenu_yc:active,
+div.titlemenu_b2 a.titlemenu_ts:link, 
+div.titlemenu_b2 a.titlemenu_ts:visited,
+div.titlemenu_b2 a.titlemenu_ts:active {
+	display: block;
+	color: #505050;
+	text-decoration: none;
+	font: 14px/30px 'Microsoft YaHei', 'SimSun', Arial, Sans-Serif;
+	text-align: center;
+	background: #fbe5ce;
+	margin-bottom: 3px;
+	border: 1px #fecf9b solid;
+}
+
+div.page_content {
+	font: 14px/22px Verdana, Arial, Helvetica, sans-serif;
+	color: #555;
+}
+ p{
+	font: 14px/22px Verdana, Arial, Helvetica, sans-serif;
+	color: #555;
+}
+div #nav {
+	
+}
+form{margin:0;padding:0}
+
+.formgroup{
+margin-bottom:10px;
+height:28px;
+border-bottom:1px #def solid;
+background:url(../images/icon1.gif) left no-repeat;
+font: 14px/28px Verdana, Arial, Helvetica, sans-serif;
+padding-left:22px;
+font-weight:bold;
+}
+
+
+.formintro{
+border:1px #def solid;
+margin:10px 0px 20px 0px;
+padding:10px;
+background:#f7fbfe;
+}
+
+.formborder{
+margin:0px;
+margin-top:-1px;
+border:1px #e8e8e8 solid;
+padding:12px;
+}
+
+
+.input{border:1px #ddd solid;height:20px;line-height:20px;padding:0px 3px;color:#555;background:#fbfbfb}
+.textarea{border:1px #ddd solid;font-size:12px;padding:3px;color:#555;background:#fbfbfb}
+.button{border:1px #ddd solid;font: 12px Verdana, Arial, Helvetica, sans-serif;height:22px;line-height:20px;padding:0px 3px;background:#f7f7f7;}
+.submit{border:1px #ddd solid;font: 12px Verdana, Arial, Helvetica, sans-serif;height:22px;line-height:20px;padding:0px 3px;background:#f7f7f7;}
+.mustfill{color:#ff0000}
+
+.loginlink{cursor:pointer;text-decoration: underline}
+.logoutlink{cursor:pointer;text-decoration: underline}
+
+div#nav a {
+	text-decoration: none;
+}

@@ -7,16 +7,13 @@ import java.util.Date;
  */
 public class Article {
 	private Integer id;
-	/**
-	 * 文章标题
-	 */
 	private String title;
 	private String type;
 	private String writer;
 	private Date publishtime;
 	private String content;
 	private Integer commentCount;//评论量
-	private Integer Browsingamount;
+	private Integer browsingamount;//浏览量
 	private Integer supportNum;
 	private Integer opposeNum;
 	public Article() {
@@ -31,7 +28,7 @@ public class Article {
 		this.publishtime = publishtime;
 		this.content = content;
 		this.commentCount = commentCount;
-		Browsingamount = browsingamount;
+		this.browsingamount = browsingamount;
 		this.supportNum = supportNum;
 		this.opposeNum = opposeNum;
 	}
@@ -78,10 +75,10 @@ public class Article {
 		this.commentCount = commentCount;
 	}
 	public Integer getBrowsingamount() {
-		return Browsingamount;
+		return browsingamount;
 	}
 	public void setBrowsingamount(Integer browsingamount) {
-		Browsingamount = browsingamount;
+		this.browsingamount = browsingamount;
 	}
 	public Integer getSupportNum() {
 		return supportNum;
@@ -99,7 +96,7 @@ public class Article {
 	public String toString() {
 		return "Article [id=" + id + ", title=" + title + ", type=" + type + ", writer=" + writer + ", publishtime="
 				+ publishtime + ", content=" + content + ", commentCount=" + commentCount + ", Browsingamount="
-				+ Browsingamount + ", supportNum=" + supportNum + ", opposeNum=" + opposeNum + "]";
+				+ browsingamount + ", supportNum=" + supportNum + ", opposeNum=" + opposeNum + "]";
 	}
 
 }

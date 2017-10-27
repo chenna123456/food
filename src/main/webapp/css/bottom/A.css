@@ -1,0 +1,24 @@
+/*=========脚注菜单===========*/
+div#bottommenu{
+	margin: 0;
+	padding:0;
+	border: 0;
+	height: 35px;
+	line-height:35px;
+	color:#474747;
+	text-align:center;
+	background: url(../../img/bottom/bottommenu_bg.jpg) repeat-x;
+}
+
+
+div#bottommenu a:link,div#bottommenu a:visited,div#bottommenu a:active{
+	margin:0 5px;
+	color:#474747;
+	text-decoration: none;
+}
+
+div#bottommenu a:hover{
+	margin:0 5px;
+	color:#ffcc00;
+	text-decoration: none;
+}

@@ -11,6 +11,7 @@ public class Complaint {
 	private String title;
 	private String content;
 	private String complaintName;
+	private Integer vipId;
 	private String gender;
 	private String address;
 	private Date complaintDate;
@@ -18,12 +19,14 @@ public class Complaint {
 	public Complaint() {
 	}
 
-	public Complaint(Integer id, String title, String content, String complaintName, String gender, String address,
-			Date complaintDate) {
+	public Complaint(Integer id, String title, String content, String complaintName, Integer vipId, String gender,
+			String address, Date complaintDate) {
+		super();
 		this.id = id;
 		this.title = title;
 		this.content = content;
 		this.complaintName = complaintName;
+		this.vipId = vipId;
 		this.gender = gender;
 		this.address = address;
 		this.complaintDate = complaintDate;
@@ -61,6 +64,14 @@ public class Complaint {
 		this.complaintName = complaintName;
 	}
 
+	public Integer getVipId() {
+		return vipId;
+	}
+
+	public void setVipId(Integer vipId) {
+		this.vipId = vipId;
+	}
+
 	public String getGender() {
 		return gender;
 	}
@@ -87,7 +98,10 @@ public class Complaint {
 
 	public String toString() {
 		return "Complaint [id=" + id + ", title=" + title + ", content=" + content + ", complaintName=" + complaintName
-				+ ", gender=" + gender + ", address=" + address + ", complaintDate=" + complaintDate + "]";
+				+ ", vipId=" + vipId + ", gender=" + gender + ", address=" + address + ", complaintDate="
+				+ complaintDate + "]";
 	}
+
+	
 
 }

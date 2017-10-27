@@ -12,12 +12,12 @@ import com.oracleoaec.entity.Navigation;
  */
 public interface NavigationDao {
 	/**
-	 * 查询Navigation表中的所有数据的Title
+	 * 查询Navigation表中的所有数据
 	 * 封装为Navigation对象，并添加到list集合中
 	 * 将该list集合返回
 	 * @return
 	 */
-	List<Navigation> findTitle();
+	List<Navigation> findAllNavigation();
 	/**
 	 * 根据指定的title,查询表Navigation中
 	 * 对应的数据内容，并封装为Navigation对象返回

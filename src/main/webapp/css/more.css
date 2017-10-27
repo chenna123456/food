@@ -1,0 +1,228 @@
+div#nav {}
+
+div#nav a {
+	text-decoration: none;
+}
+
+div#newsquery {
+	margin: 0px;
+	padding: 0px;
+}
+
+div#newsquery ul {
+	margin: 0;
+	padding: 0;
+}
+
+div#newsquery li {
+	list-style-type: none;
+	padding-left: 18px;
+	height: 30px;
+	font-size: 12px;
+	overflow: hidden;
+	line-height: 30px;
+	border-bottom: 1px #eee dotted;
+}
+
+div#newsquery a:link,
+div#newsquery a:visited,
+div#newsquery a:active {
+	text-decoration: none;
+	font: 14px/30px simsun;
+	color: #555;
+}
+
+div#newsquery a:hover {
+	text-decoration: underline;
+	font: 14px/30px simsun;
+	color: #ff6600;
+}
+
+div#newsquery li.title {
+	background: url(../imgs/queryli.gif) 3px no-repeat;
+	padding-left: 19px;
+}
+
+div#newsquery div.title {
+	float: left;
+	font: 14px/30px simsun;
+}
+
+div#newsquery .time {
+	float: right;
+	white-space: nowrap;
+	overflow: hidden;
+	font: 14px/30px simsun;
+	padding-right: 15px;
+	color: #777;
+}
+
+div#showpages {
+	clear: both;
+	padding: 0px;
+	margin: 20px 0px;
+	width: 100%;
+	height: 30px;
+	white-space: nowrap;
+}
+
+div#pagesinfo {
+	float: left;
+	padding: 3px 8px;
+	white-space: nowrap;
+}
+
+div#pages {
+	float: right;
+	padding-right: 8px;
+	white-space: nowrap;
+}
+
+div#pages ul {
+	margin: 0;
+	padding: 0;
+}
+
+div#pages a:link,
+div#pages a:visited,
+div#pages a:active {
+	color: #505050;
+	text-decoration: none;
+}
+
+div#pages a:hover {
+	color: #ff0000;
+	text-decoration: none;
+}
+
+div#pages li {
+	margin: 3px;
+	padding: 2px 5px;
+	list-style-type: none;
+	float: left;
+	background: #fff;
+	color: #505050;
+	border: 1px #cde6ff solid;
+	white-space: nowrap;
+}
+
+div#pages li.pagesnow {
+	color: #505050;
+	background-color: #e4f2ff;
+	white-space: nowrap;
+	border: 1px #cde6ff solid;
+}
+
+div#pages li.pbutton {
+	color: #505050;
+	background-color: #e4f2ff;
+	padding: 3px 5px 1px 5px;
+	white-space: nowrap;
+	border: 1px #cde6ff solid;
+}
+
+div#pages li.opt {
+	color: #505050;
+	padding: 0px 2px;
+	white-space: nowrap;
+	border: 0px;
+}
+
+ul.newslist {
+	margin: 0px;
+	padding: 0px;
+}
+
+li.newslist {
+	margin: 0;
+	padding-left: 16px;
+	list-style-type: none;
+	font-weight: 100;
+	color: #505050;
+	background: transparent url(../images/li.gif) left no-repeat;
+}
+
+a.newslist:link,
+a.newslist:visited,
+a.newslist:active {
+	color: #505050;
+	text-decoration: none;
+	font: 12px/22px simsun;
+}
+
+a.newslist:hover {
+	color: #ff0000;
+	text-decoration: underline;
+	font: 12px/22px simsun;
+}
+
+div#dingcanweekmenu{
+	border:0px;
+	height:100%;
+	padding:0;
+	margin:0;
+	background:url(../imgs/dingcanweekmenu_leftline.jpg) repeat-y;
+}
+
+div#dingcanweekmenu2{
+	height:100%;
+	background:url(../imgs/dingcanweekmenu_rightline.jpg) right repeat-y ;
+}
+
+div#dingcanweekmenu_top{
+	width:100%;
+	height:43px;
+	background:url(../imgs/dingcanweekmenu.jpg) 0px 0px no-repeat;
+}
+
+div#dingcanweekmenu_top_left{
+	float:left;
+	height:43px;
+	line-height:43px;
+	padding-left:50px;
+	font-size:16px;
+	font-weight:bold;
+	color:#feab43;
+}
+
+div#dingcanweekmenu_top_right{
+	float:right;
+	width:10px;
+	height:43px;
+	background:url(../imgs/dingcanweekmenu.jpg) -890px 0px no-repeat;
+}
+
+div#dingcanweekmenu_bottom_left{
+	margin-top:-10px;
+	height:10px;
+	line-height:10px;
+	background:url(../imgs/dingcanweekmenu.jpg) 0px -220px no-repeat;
+}
+
+div#dingcanweekmenu_bottom_right{
+	float:right;
+	margin-top:-10px;
+	width:10px;
+	height:10px;
+	line-height:10px;
+	background:url(../imgs/dingcanweekmenu.jpg) -890px -220px no-repeat;
+}
+
+div.dingcanweekmenuinfo{
+	margin:6px 6px 10px 6px;
+	background:#fffbef;
+}
+
+.riqi {
+	cursor:pointer;
+}
+
+a.nowriqiclass:link, a.nowriqiclass:visited, a.nowriqiclass:active{
+	color:#f89c47;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+.puriqiclass{
+	
+}
